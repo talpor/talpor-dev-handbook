@@ -1,0 +1,10 @@
+site_name: talPor Handbook
+theme: flatly
+repo_url: https://github.com/talpor/talpor-handbook/
+site_favicon: images/favicon.ico
+copyright: talPor Solutions 2015
+pages:
+- Home: index.md
+- Methodology: methodology.md
+- Development:
+  - 'Source Control': 'dev/source-control.md'

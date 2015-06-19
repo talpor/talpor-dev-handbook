@@ -1,2 +1,1 @@
-Sphinx == 1.2b1
-sphinx-bootstrap-theme == 0.2.7
+mkdocs == 0.14.0
