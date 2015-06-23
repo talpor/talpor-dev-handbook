@@ -1,4 +1,4 @@
-# Trello
+﻿# Trello
 This section will define how we should be using Trello in our projects.
 
 ##Naming of Cards (US, Tasks):
@@ -18,7 +18,7 @@ During the meeting you need to inform the client about the status of Trello that
 ##Lists and meaning of lists:
 
 1. **Backlog:**
-Here should be every task that define the project. If a task is not in the backlog (or any other list) it doesn't exist. Any idea, any "nice to have" feature, everything that should be included in the system at any point in the development should be there so everybody can track what are the things that is left to complete the project.
+Here should be every task that define the project. If a task is not in the backlog (or any other list) it doesn't exist. Any idea, any "nice to have" feature, everything that should be included in the system at any point in the development should be there so everybody can track what are the things that is left to complete the project. The bugs that are found in the project should be created in this list and must be marked with a **BUG** label.
 
 2. **ToDo:**
 In this list should be the tasks that are going to be done in the current iteration. Those tasks should have been estimated in order to be sure that the iteration can be completed on time.
