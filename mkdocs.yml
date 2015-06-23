@@ -8,5 +8,6 @@ pages:
 - Methodology:
   - 'Introduction': 'methodology/index.md'
   - 'Post-mortem': 'methodology/post-mortem.md'
+  - 'Definition of Done': 'methodology/done.md'
 - Development:
   - 'Source Control': 'dev/source-control.md'
