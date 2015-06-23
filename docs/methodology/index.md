@@ -1,4 +1,5 @@
-# Our Methodology
+﻿
+# Methodology
 
 For our development process we use an agile methodology. Our methodology draws from Scrum and Extreme Programming (XP), both well-known and well-documented agile methodologies. Therefore, to get details regarding our practices that escape the scope of this handbook, the documentation for these methodologies is the place to look.
 

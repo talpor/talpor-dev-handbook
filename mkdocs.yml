@@ -5,6 +5,8 @@ site_favicon: images/favicon.ico
 copyright: talPor Solutions 2015
 pages:
 - Home: index.md
-- Methodology: methodology.md
+- Methodology:
+  - 'Introduction': 'methodology/index.md'
+  - 'Post-mortem': 'methodology/post-mortem.md'
 - Development:
   - 'Source Control': 'dev/source-control.md'
