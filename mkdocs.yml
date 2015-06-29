@@ -1,13 +1,28 @@
 site_name: talPor Handbook
-theme: flatly
+theme: mkdocs
 repo_url: https://github.com/talpor/talpor-handbook/
 site_favicon: images/favicon.ico
 copyright: talPor Solutions 2015
 pages:
 - Home: index.md
-- Methodology:
-  - 'Introduction': 'methodology/index.md'
-  - 'Post-mortem': 'methodology/post-mortem.md'
-  - 'Definition of Done': 'methodology/done.md'
+- Conception: 'conception/index.md'
 - Development:
-  - 'Source Control': 'dev/source-control.md'
+  - 'Introduction': 'development/index.md'
+  - 'Methodology':
+    - 'Introduction': 'development/methodology/index.md'
+    - 'PostMortem': 'development/methodology/post-mortem.md'
+    - 'Trello': 'development/methodology/trello.md'
+    - 'Done': 'development/methodology/done.md'
+  - 'Tech Standards':
+    - 'Introduction': 'development/tech/index.md'
+    - 'Code Reviews': 'development/tech/code-reviews.md'
+    - 'Coding Style': 'development/tech/coding-style.md'
+    - 'Source Control': 'development/tech/source-control.md'
+    - 'Hotfixes': 'development/tech/hotfixes.md'
+    - 'Tech Stack': 'development/tech/tech-stack.md'
+    - 'Testing': 'development/tech/testing.md'
+    - 'Staging': 'development/tech/staging.md'
+    - 'Security': 'development/tech/security.md'
+    - 'Provisioning': 'development/tech/provisioning.md'
+- Deployment: 'deployment/index.md'
+- Wrap-up: wrapup.md

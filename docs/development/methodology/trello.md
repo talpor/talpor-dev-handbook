@@ -1,13 +1,15 @@
-﻿# Trello
+﻿Trello
+-----------
+
 This section will define how we should be using Trello in our projects.
 
-##Naming of Cards (US, Tasks):
+###Naming of Cards (US, Tasks):
 
-The name of the card should contain a task that somebody will have to do. This task can be obtained from the user stories or by a requirement that the client needs.
+The name of the card should contain a user story that somebody will have to do. This task can be obtained from the user stories or by a requirement that the client needs.
 
 The name of the card should be short but it needs to explain what is needed to be done, if there is some extra information that is needed to fully understand the task it should be written in the description of the card. The same way if there is document that is related to the task it should be attached to the card so the person responsible of making the task can easy access to it.
 
-##Use of Trello in Weekly Meetings:
+###Use of Trello in Weekly Meetings:
 
 Trello is the main way in which we can communicate with the client about what we are currently doing, what we did and what we are going to do in the future. This means that that we need to keep it up to date and inform the client that he can keep an eye on the project at any moment just by looking at the cards on Trello.
 
@@ -15,7 +17,7 @@ Before every meeting we need to watch what is in trello and what is the status o
 
 During the meeting you need to inform the client about the status of Trello that should be the status of the project. Let the client ask questions about the cards and answer any doubts that come out. After the meeting you need to update Trello to reflect what is going to be done in the next iteration and estimate the corresponding cards.
 
-##Lists and meaning of lists:
+###Lists and meaning of lists:
 
 1. **Backlog:**
 Here should be every task that define the project. If a task is not in the backlog (or any other list) it doesn't exist. Any idea, any "nice to have" feature, everything that should be included in the system at any point in the development should be there so everybody can track what are the things that is left to complete the project. The bugs that are found in the project should be created in this list and must be marked with a **BUG** label.
