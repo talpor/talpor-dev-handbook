@@ -10,10 +10,10 @@ pages:
   - 'Introduction': 'development/index.md'
   - 'Methodology':
     - 'Introduction': 'development/methodology/index.md'
-    - 'PostMortem': 'development/methodology/post-mortem.md'
     - 'Meetings': 'development/methodology/meetings.md'
     - 'Trello': 'development/methodology/trello.md'
-    - 'Done': 'development/methodology/done.md'
+    - 'Definition of Done': 'development/methodology/done.md'
+    - 'Post-Mortem': 'development/methodology/post-mortem.md'
   - 'Tech Standards': 'development/tech/index.md'
 - Deployment:
   - 'The Deployment Phase': 'deployment/index.md'

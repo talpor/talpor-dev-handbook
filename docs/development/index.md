@@ -30,7 +30,7 @@ what will be done now.
 What you should do to onboard the project:
 
 - Set up [Slack](http://www.slack.com) for real time communication with the client.
-  This involves going to [Slack](http://www.slack.com) and create an account with
+  This involves going to [Slack](http://www.slack.com) and creating an account with
   the name of the product or company (i.e. [http://talpor.slack.com](http://talpor.slack.com)).
 - Set up a board on [Trello](http://www.trello.com) in the talPor organization to
   track what is being done on the project. Create the recommended lists from our
