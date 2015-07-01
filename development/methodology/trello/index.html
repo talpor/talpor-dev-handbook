@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../../images/favicon.ico">
+        
+
+	<title>Trello - talPor Handbook</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">talPor Handbook</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../conception/">Conception</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Methodology</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../">Introduction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../post-mortem/">PostMortem</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Trello</a>
+</li>
+
+        
+            
+<li >
+    <a href="../done/">Done</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Tech Standards</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../tech/">Introduction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../tech/code-reviews/">Code Reviews</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../tech/coding-style/">Coding Style</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../tech/source-control/">Source Control</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../tech/hotfixes/">Hotfixes</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../tech/tech-stack/">Tech Stack</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../tech/testing/">Testing</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../tech/staging/">Staging</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../tech/security/">Security</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../tech/provisioning/">Provisioning</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../deployment/">Deployment</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../wrapup/">Wrap-up</a>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../post-mortem/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../done/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/talpor/talpor-handbook/">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#trello">﻿Trello</a></li>
+        
+            <li><a href="#naming-of-cards-us-tasks">Naming of Cards (US, Tasks):</a></li>
+        
+            <li><a href="#use-of-trello-in-weekly-meetings">Use of Trello in Weekly Meetings:</a></li>
+        
+            <li><a href="#lists-and-meaning-of-lists">Lists and meaning of lists:</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="trello">﻿Trello</h2>
+<p>This section will define how we should be using Trello in our projects.</p>
+<h3 id="naming-of-cards-us-tasks">Naming of Cards (US, Tasks):</h3>
+<p>The name of the card should contain a user story that somebody will have to do. This task can be obtained from the user stories or by a requirement that the client needs.</p>
+<p>The name of the card should be short but it needs to explain what is needed to be done, if there is some extra information that is needed to fully understand the task it should be written in the description of the card. The same way if there is document that is related to the task it should be attached to the card so the person responsible of making the task can easy access to it.</p>
+<h3 id="use-of-trello-in-weekly-meetings">Use of Trello in Weekly Meetings:</h3>
+<p>Trello is the main way in which we can communicate with the client about what we are currently doing, what we did and what we are going to do in the future. This means that that we need to keep it up to date and inform the client that he can keep an eye on the project at any moment just by looking at the cards on Trello.</p>
+<p>Before every meeting we need to watch what is in trello and what is the status of every card so we can give a correct information about the project to the client. Use trello to write the agenda of the meeting, in this way everybody can see what have happen in the previous meetings in an easy way. Also write in the agenda thing that come out in the meeting as thing that need to be done that aren't necessary a task.</p>
+<p>During the meeting you need to inform the client about the status of Trello that should be the status of the project. Let the client ask questions about the cards and answer any doubts that come out. After the meeting you need to update Trello to reflect what is going to be done in the next iteration and estimate the corresponding cards.</p>
+<h3 id="lists-and-meaning-of-lists">Lists and meaning of lists:</h3>
+<ol>
+<li>
+<p><strong>Backlog:</strong>
+Here should be every task that define the project. If a task is not in the backlog (or any other list) it doesn't exist. Any idea, any "nice to have" feature, everything that should be included in the system at any point in the development should be there so everybody can track what are the things that is left to complete the project. The bugs that are found in the project should be created in this list and must be marked with a <strong>BUG</strong> label.</p>
+</li>
+<li>
+<p><strong>ToDo:</strong>
+In this list should be the tasks that are going to be done in the current iteration. Those tasks should have been estimated in order to be sure that the iteration can be completed on time.</p>
+</li>
+<li>
+<p><strong>Doing:</strong>
+As soon as you begin to work in a task you should move it from "ToDo" to "Doing" this helps the team, and the client, to know what is the current status of the iteration and in what things the team is working.</p>
+</li>
+<li>
+<p><strong>Pending Review (optional, to be reviewed by other dev):</strong>
+The general idea behind this list is to add a step in the quality of the software that we are building. There are some things that the client can't or don't want to test, this things should be tested by someone different of the developer of the task. This is optional, it depends if the team is bigger than one developer and if there is time planned in the iteration to do this tests.</p>
+</li>
+<li>
+<p><strong>To be tested (to be reviewed and approved by client):</strong>
+This tests are known as "Acceptance Tests", the client is the only one who knows what he really wants so it depends of him if the feature that we build satisfies his needs. Sometimes the client doesn't want to do the tests in the test server, but is really necessary to make him understands that this is the only way that we can be sure that we are building the right product.</p>
+</li>
+<li>
+<p><strong>Approved (Ready for Deploy):</strong>
+The client let the team knows that the card is approved by moving it from "To be tested" to "Approved". Only the client can move the cards to this list (Unless there is a previous agreement that another person can do it). The cards on this list can be deployed into production when the client needed to.</p>
+<p>a- Code is implemented and working.</p>
+<p>b- Tests are written and passes.</p>
+<p>c- Code is live in the development (or test) server.</p>
+</li>
+<li>
+<p><strong>Done:</strong>
+Here should be the cards that are approved by the client and that are already in the production server. After the client approves the card, the person responsible of making the deploy into production should put the card in this list as soon as he finish the deploy (The features should be "<em>smoke tested</em>" to be sure that everything is OK).</p>
+<p>a- Task was in Approved (ready for deploy).</p>
+<p>b- Acceptance test have been carried out by the client.</p>
+<p>c- Code is in production environment.</p>
+</li>
+<li>
+<p><strong>Agenda:</strong>
+In this list every card represents a meeting, in those cards is the information about the points that were discussed in the meeting. The name of the card is the date in which the meeting occurs.
+Use a <em>todo list</em> to show the points to be discussed. Use the description to annotate any information relevant about the points of the meetings.
+You can attach documents or make comments about the meeting using the corresponding feature in Trello.</p>
+</li>
+</ol>
+<p><em>Remember that a tool is only useful if the anyone uses it. Due to the fact that we are not in the same place we strongly depend of this kind of tools to be able to do our job in a good way. So do not hesitate to bring new insights about how we can improve the way we use Trello or if there is another tool that can replace this and make our life easier.</em></p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p>talPor Solutions 2015</p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

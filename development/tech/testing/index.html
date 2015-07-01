@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../../../images/favicon.ico">
+        
+
+	<title>Testing - talPor Handbook</title>
+
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../../..">talPor Handbook</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../conception/">Conception</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../">Introduction</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Methodology</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../methodology/">Introduction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../methodology/post-mortem/">PostMortem</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../methodology/trello/">Trello</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../methodology/done/">Done</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Tech Standards</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../">Introduction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../code-reviews/">Code Reviews</a>
+</li>
+
+        
+            
+<li >
+    <a href="../coding-style/">Coding Style</a>
+</li>
+
+        
+            
+<li >
+    <a href="../source-control/">Source Control</a>
+</li>
+
+        
+            
+<li >
+    <a href="../hotfixes/">Hotfixes</a>
+</li>
+
+        
+            
+<li >
+    <a href="../tech-stack/">Tech Stack</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Testing</a>
+</li>
+
+        
+            
+<li >
+    <a href="../staging/">Staging</a>
+</li>
+
+        
+            
+<li >
+    <a href="../security/">Security</a>
+</li>
+
+        
+            
+<li >
+    <a href="../provisioning/">Provisioning</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../deployment/">Deployment</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../../wrapup/">Wrap-up</a>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../tech-stack/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../staging/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/talpor/talpor-handbook/">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#testing">Testing</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h3 id="testing">Testing</h3>
+<p>We strive for 100% testing coverage. Write tests religiously for your
+code. Test both your backend and frontend, your logic, and common code
+paths. Test for invalid inputs, and malicious inputs. <strong>Try to break
+your code</strong>. It is a lot better if you break it locally, rather than
+on production.</p>
+<p>While we are not strongly opinionated on the approach you take (TDD?
+BDD? Red-Green-Refactor?), your codebase should be tested
+against. Prefer throughly tested libraries, frameworks and apps over
+poorly tested ones.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p>Good testing means shiping working code. <strong>Be religious about
+  testing your codebase.</strong></p>
+</li>
+<li>
+<p>No testing or poor, sloppy testing will result in bad code
+reviews. Respect your teammates time, write good tests.</p>
+</li>
+<li>
+<p>Testing is central to our continuous integration system. Lacking
+  tests means that we won't be able to catch regressions or problems
+  automatically.</p>
+</li>
+</ul></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p>talPor Solutions 2015</p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../../js/highlight.pack.js"></script>
+        <script>var base_url = '../../..';</script>
+        <script data-main="../../../mkdocs/js/search.js" src="../../../mkdocs/js/require.js"></script>
+        <script src="../../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

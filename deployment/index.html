@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../images/favicon.ico">
+        
+
+	<title>Deployment - talPor Handbook</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">talPor Handbook</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../conception/">Conception</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../development/">Introduction</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Methodology</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../development/methodology/">Introduction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/methodology/post-mortem/">PostMortem</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/methodology/trello/">Trello</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/methodology/done/">Done</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Tech Standards</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../development/tech/">Introduction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/code-reviews/">Code Reviews</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/coding-style/">Coding Style</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/source-control/">Source Control</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/hotfixes/">Hotfixes</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/tech-stack/">Tech Stack</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/testing/">Testing</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/staging/">Staging</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/security/">Security</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/provisioning/">Provisioning</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./">Deployment</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../wrapup/">Wrap-up</a>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../development/tech/provisioning/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../wrapup/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/talpor/talpor-handbook/">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#deployment-phase">Deployment phase</a></li>
+        
+            <li><a href="#the-checklist">The Checklist</a></li>
+        
+            <li><a href="#provisioning">Provisioning</a></li>
+        
+            <li><a href="#continuous-integration">Continuous Integration</a></li>
+        
+            <li><a href="#errors-and-logging">Errors and Logging</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="deployment-phase">Deployment phase</h2>
+<p>A deploy is when you push your local changes to either the
+staging/development server or the production server. It doesn't just
+happen just the once when everything is done, but it's an event that
+happens regularly, specially when you are pushing changes from local
+to staging. When you push to production you should take extra care
+because you might be dealing with real data from your client.</p>
+<p>As a rule of thumb, we generally use AWS for all our servers since it
+provides the highest level of flexibility and scalability you might
+possibly need.</p>
+<h3 id="the-checklist">The Checklist</h3>
+<p>This checklist is a list of stuff to make sure you are doing (or not
+and why) when setting up or deploying to a server.</p>
+<ul>
+<li>
+<p>Make sure you disable password logins through SSH. <strong>Enable public
+  key authentication only</strong>. Don't change SSH server port from 22 to
+  anything else: <strong>Security by obfuscation is not security.</strong></p>
+</li>
+<li>
+<p>Use <strong>sudo</strong> and use a good password for both your public key and
+  your account.</p>
+</li>
+<li>
+<p>Setup your firewall. Generally you'll want to block everything
+  except ports 22 (SSH), 80 (HTTP) and 443 (HTTPS).</p>
+</li>
+<li>
+<p>Setup NGINX as a reverse proxy to your application server.</p>
+</li>
+<li>
+<p>Production should always use a trusted HTTPS certificate. Make sure
+  to get it and set it up.</p>
+</li>
+<li>
+<p>Redis is a sweet piece of software. It's so good and versatile that
+  you can use it from a cache backend to a job queue backend. Figure
+  out if you need it in your stack and set it up.</p>
+</li>
+<li>
+<p>Make sure we do not leak secrets. <strong>Make sure that if an API key is
+  accessible by untrusted agents then it is a public key</strong>. Don't
+  version control secrets. <strong>Use environment variables to store secret
+  keys.</strong></p>
+</li>
+<li>
+<p><strong>Setup automatic backups for production.</strong> Backup both the
+  database, and user generated content and store it <strong>offsite.</strong></p>
+</li>
+<li>
+<p>Log everything. Read on Logging &amp; Errors below.</p>
+</li>
+<li>
+<p>Automate your usual deploy process. We suggest using Fabric for
+  this.</p>
+</li>
+</ul>
+<h3 id="provisioning">Provisioning</h3>
+<p>We have a set of Salt states to help with provisioning servers with
+secure defaults. Don't be afraid to ask for them. There's an ongoing
+internal effort to move application servers into isolated containers
+(e.g. using Docker). If that sounds interesting, don't be afraid to
+ask about that either. Many of our tools, for example our CI pipeline,
+is built around the assumption that you are using Docker, so it might
+be a good idea to use Docker from the get go.</p>
+<h3 id="continuous-integration">Continuous Integration</h3>
+<p>Read on <a href="https://gist.github.com/scast/a47facfe43744a75e7b7">Continuous Integration at talPor</a>.</p>
+<h3 id="errors-and-logging">Errors and Logging</h3>
+<p>As a general rule of thumb, log everything. Log errors and
+notices. Use your stack standard way to do this, <strong>don't just spill
+print statements all over the place.</strong> If you are doing something
+critical, like handling payments, make sure you log the transaction
+once on a log file and once on your database.</p>
+<p>We internally use sentry for error logging and notification. Setup a
+different DSN for each of your servers and respond to errors swiftly.</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p>talPor Solutions 2015</p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

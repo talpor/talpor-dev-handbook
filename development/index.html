@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../images/favicon.ico">
+        
+
+	<title>Introduction - talPor Handbook</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">talPor Handbook</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../conception/">Conception</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li class="active">
+    <a href="./">Introduction</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Methodology</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="methodology/">Introduction</a>
+</li>
+
+        
+            
+<li >
+    <a href="methodology/post-mortem/">PostMortem</a>
+</li>
+
+        
+            
+<li >
+    <a href="methodology/trello/">Trello</a>
+</li>
+
+        
+            
+<li >
+    <a href="methodology/done/">Done</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Tech Standards</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="tech/">Introduction</a>
+</li>
+
+        
+            
+<li >
+    <a href="tech/code-reviews/">Code Reviews</a>
+</li>
+
+        
+            
+<li >
+    <a href="tech/coding-style/">Coding Style</a>
+</li>
+
+        
+            
+<li >
+    <a href="tech/source-control/">Source Control</a>
+</li>
+
+        
+            
+<li >
+    <a href="tech/hotfixes/">Hotfixes</a>
+</li>
+
+        
+            
+<li >
+    <a href="tech/tech-stack/">Tech Stack</a>
+</li>
+
+        
+            
+<li >
+    <a href="tech/testing/">Testing</a>
+</li>
+
+        
+            
+<li >
+    <a href="tech/staging/">Staging</a>
+</li>
+
+        
+            
+<li >
+    <a href="tech/security/">Security</a>
+</li>
+
+        
+            
+<li >
+    <a href="tech/provisioning/">Provisioning</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../deployment/">Deployment</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../wrapup/">Wrap-up</a>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../conception/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="methodology/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/talpor/talpor-handbook/">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#project-development-phase">Project development phase</a></li>
+        
+            <li><a href="#onboarding">Onboarding</a></li>
+        
+            <li><a href="#methodology">Methodology</a></li>
+        
+            <li><a href="#technical-standards">Technical standards</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="project-development-phase">Project development phase</h2>
+<p>The development phase begins immediately after conception, together
+with design it makes up the core of the software development
+process. For software engineers, the development phase is their time
+to shine. In this stage, user stories are scheduled for development on
+a week-by-week basis for the engineering team to work on. Initially,
+the focus is on building the functionality of the MVP, while the design
+team works in parallel designing the whole user interface and user
+experience according to the user stories and mockups. Once the design
+team starts producing designs, those are to be implemented into the final
+product that will be delivered.</p>
+<h3 id="onboarding">Onboarding</h3>
+<p>Right before starting the development process, take the time to establish
+clear and redundant communication paths between the client and the team. <strong>It is
+preferable to over-communicate than to under-communicate.</strong></p>
+<p>Good communication is the #1 way to avoid overly long meetings and
+last minute changes of heart. Involve the client, engage and
+listen. Good communication between the team members avoids bugs and
+problems down the road. As with the discovery meetings, take time to
+schedule <em>pre-</em> and <em>post-meetings</em> where you review what was done and
+what will be done now.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p>Use tools to aid your communication. Set up [Slack] for real time
+  communication with the client, set up [Trello] to track what is being
+  done. Use the integrations between your tools, for example
+  Slack-Trello integration can be useful to notify the client new
+  changes are up.</p>
+</li>
+<li>
+<p>Schedule your client meetings. <strong>Be on time</strong>. If you are being
+  dilligent about keeping your communication paths open, meetings
+  should be just a summary of what was done and what is going to be
+  worked on during the week.</p>
+</li>
+<li>
+<p><strong>Avoid using meetings for testing and bug reports</strong>. Forward
+  problems to the right communication channels. This helps keep
+  meetings straightforward, and helps you keep track of what needs to
+  be done.</p>
+</li>
+</ul>
+<h3 id="methodology">Methodology</h3>
+<p>For our development process we use an agile methodology. Our methodology draws
+from Scrum and Extreme Programming (XP), both well-known and well-documented
+agile methodologies. Therefore, to get details regarding our practices that
+escape the scope of this handbook, the documentation for these methodologies
+is the place to look.</p>
+<p>So, what does using an agile methodology entail? It means we expect project
+requirements to be constantly evolving and what we developed a week ago can be
+very far from what we're building for tomorrow. You might be wondering:
+<strong>"What the hell? How are you supposed to plan and build software under those
+conditions?"</strong>. Well, we do.</p>
+<p>Agile methodologies were born out of the inability of other methodologies, like
+RUP or Waterfall, to adapt to unavoidable changes that occur while a product
+is being developed. So how do we handle this and keep our clients happy? We
+follow incremental design guidelines and an iterative development process in
+order to minimize the risks that this constant evolution entails.</p>
+<p>There are several techniques and weekly tasks that need to be followed as part
+of talPor's methodology so read on to the <a href="methodology/">Methodology</a>
+section for further detail of what needs to be done during a project's life cycle.</p>
+<h3 id="technical-standards">Technical standards</h3>
+<p>We're a tech company that builds products and in order to deliver a great product
+we need to be writing great code and using the best tools and software for the
+job. Also, in order to share our experience as a team, we need to be on the same
+page as to what software we're using as well as how we're using it. To accomplish
+both those things we have a set of standards and recommendations that are documented
+in the <a href="./tech/">Technical Standards</a> section.</p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p>talPor Solutions 2015</p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

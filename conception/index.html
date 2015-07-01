@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../images/favicon.ico">
+        
+
+	<title>Conception - talPor Handbook</title>
+
+        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="..">talPor Handbook</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="..">Home</a>
+                    </li>
+                
+                
+                
+                    <li class="active">
+                        <a href="./">Conception</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../development/">Introduction</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Methodology</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../development/methodology/">Introduction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/methodology/post-mortem/">PostMortem</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/methodology/trello/">Trello</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/methodology/done/">Done</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Tech Standards</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../development/tech/">Introduction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/code-reviews/">Code Reviews</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/coding-style/">Coding Style</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/source-control/">Source Control</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/hotfixes/">Hotfixes</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/tech-stack/">Tech Stack</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/testing/">Testing</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/staging/">Staging</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/security/">Security</a>
+</li>
+
+        
+            
+<li >
+    <a href="../development/tech/provisioning/">Provisioning</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../deployment/">Deployment</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../wrapup/">Wrap-up</a>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="..">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../development/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/talpor/talpor-handbook/">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#on-the-project-conception-phase">On the project conception phase</a></li>
+        
+            <li><a href="#the-feedback-loop">The Feedback Loop</a></li>
+        
+            <li><a href="#mockups">Mockups</a></li>
+        
+            <li><a href="#estimations">Estimations</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="on-the-project-conception-phase">On the project conception phase</h2>
+<p>The conception phase begins at the moment a new project walks through
+the door. The main focus in this stage is understanding the
+requirements of the project, and the results of this whole process is
+a set of mockups and estimations that fulfills the requirements.</p>
+<p>During this stage, the team that will be involved in a project is
+built, taking into consideration what is known initially. The idea is
+that each team member strengths can be used to successfully take the
+project from zero to production in reasonable time.</p>
+<p>At talPor, this process is known as the <strong>discovery</strong>. During a
+discovery, fast paced meetings between the client and the team take
+place with the goal of defining the requirements and defining what
+will be part of the <strong>MVP (Minimum Viable Product)</strong>. These meetings
+should be happening as fast as schedule permits.</p>
+<p>Generally, clients will want to build every conceivable feature that
+is remotely related to their idea. As such, generally there is a lot
+of noise when you try to figure out what is the real problem the
+client is trying to solve. At this stage you want to understand and
+isolate what is the big problem at hand, and provide the tools to
+solve it.</p>
+<p>Also remember, at the end of the day, we are also developing the
+client idea. We are interested in the client to be successful, so we
+want to be able, at the end of the development process and into the
+production stage, to be able to (in)validate the path that has been
+chosen.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p>Listen to what the client says and want. <strong>Take notes</strong>.</p>
+</li>
+<li>
+<p>Be polite with your client but very assertive.</p>
+</li>
+<li>
+<p>Explain when something is not possible (or extremely hard).</p>
+</li>
+<li>
+<p>Involve everybody, including the client, in the process. Don't take
+  ideas for granted, don't make assumptions, speak up when necessary.</p>
+</li>
+</ul>
+<h3 id="the-feedback-loop">The Feedback Loop</h3>
+<p>The feedback loop is the shape the discovery process takes as meetings
+with the client take place. When the first meeting with the client
+happens, it is expected that the client will talk and explain the
+project to the team, while the team takes notes and asks questions. In
+this meeting, most of the talk will be done by the client.</p>
+<p>After the first meeting, the team will start shaping up the
+requirements the client talked about. Possibly, the team will come up
+with wireframes or mockups, or some other way to visualize it. As the
+next meeting with the client comes around (which should be as soon as
+possible), roles in the meeting slightly shift.</p>
+<p>During the second meeting, the team will present their mockups to the
+client. It is expected that the client will have comments, questions
+or simply have more to add to what was already said. Again, the team
+takes notes and gets the opportunity to ask more questions which help
+solidify the vision of a project.</p>
+<p>The internal work is repeated again, coming up with new visualizations
+of the requirements. As the next meeting comes around, the roles in
+the meeting shift even more, with the team explaining the vision of
+the requirements they have, and the client, ideally, aligning even
+further with that vision. More comments and questions can be posed by
+the client, but ideally as every meeting with further developments
+happen, the client will have less and less to say.</p>
+<p>This loop continues, until a united vision between the team and the
+client is agreed upon.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p><strong>Prepare before your client meeting and summarize what happens after
+  it.</strong> Take the time to do a short <em>pre-meeting</em> with your teammates to
+  have a common understanding and goals in the meeting, and a short
+  <em>post-meeting</em> once the meeting is over.</p>
+</li>
+<li>
+<p><strong>Try to validate your team hypothesis.</strong> For example, try to propose
+  stuff that is known to work instead of reinventing the wheel.</p>
+</li>
+<li>
+<p><strong>Use what is available to you.</strong> If this is not a new project, ask to
+  see Google Analytics data, or any data that the project has
+  available. Make better hypothesis using this.</p>
+</li>
+<li>
+<p><strong>Assume as little as possible.</strong> If you can't validate, it's just a
+  hunch.</p>
+</li>
+<li>
+<p>Sometimes, the client don't want to let go of a feature they deem
+  really important. Try to compromise, try to explain why is it not
+  possible. Explain that if that feature makes it into the final
+  vision for the MVP, other features will have to be dropped for now.</p>
+</li>
+<li>
+<p>The whole point of the discovery is to converge on a concrete but
+  not final vision for the project. Sometimes, your client will always
+  have something more to say, if possible listen, if not, remind them
+  that this is a MVP and more time to build other features will always
+  be there afterwards.</p>
+</li>
+<li>
+<p>Remind your client there is space for more development after the MVP
+  is done. The point of bounding the reach of the MVP is to be able to
+  <strong>validate as soon as possible</strong> rather than when multiple months of
+  development have been poured into the wrong hypothesis.</p>
+</li>
+</ul>
+<h3 id="mockups">Mockups</h3>
+<p>Mockups are one of the deliverables of the discovery process. It
+should represent a very basic view of the direction the team is taking
+with the project. During the discovery process, mockups should be used
+to aid the delivery of the vision by the team.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p>While simple, mockups should be sufficient to represent the vision
+  the project will take. Don't overlook details, but be pragmatic
+  about them.</p>
+</li>
+<li>
+<p>Currently, we use <a href="https://balsamiq.com/">Balsamiq Mockups</a> to build
+  mockups.</p>
+</li>
+</ul>
+<h3 id="estimations">Estimations</h3>
+<p>Estimations are one of the deliverables of the discovery process. At
+talPor, we use a system of <strong>user stories and story points</strong> to
+estimate tasks to be done in a project. A user story is a sentence of
+the form "As a [actor], I want to [action]". For example, one possible
+user story is "As a user, I want to log in".</p>
+<p>Every single feature that is proposed during the discovery process
+should be turned into one or several user stories. Consider using
+<em>themes</em> to classify user stories. For example, the previous user
+story could be part of the <em>accounts</em> theme. <strong>Every user story should
+be estimated using story points.</strong></p>
+<p>At talPor we use a Fibonacci schemed story point system. We can assign
+to every task the following story points: 0.5, 1, 2 (a day worth of
+work), 3, 5, 8, 13, and 20+. We estimate every engineer can perform 10
+story points a week, as such, assigning 8 to a task is saying it is
+expected to take less than a week, and 13 more than one week.</p>
+<p>Assigning story points to a task should be done by the engineering
+team physically at the same place (or via a video conference if not
+possible). Ideally, each team member should have a set of cards or pieces
+of paper with the possible story point values (0.5, 1, 2, 3, ...) written on them.</p>
+<p>You should start by agreeing upon a user story that you all
+estimate to be a 2, and another user story that you all estimate to be a 5.
+The need for this is to set a baseline for comparison when estimating the
+remaining cards. Once these have been agreed upon, for each user story
+every team member shows the card with the story points they believe the
+story will take. If every member estimated the same, then the value is
+recorded as the user story estimation. In case there was a disagreement,
+a <strong>consensus needs to be reached</strong> before an estimation can be recorded
+for the user story.</p>
+<p>Once every user story is estimated, some calculations should be done
+to figure out the expected standard deviation for the user
+stories. There are internal spreadsheets available to do this. Using
+those calculations, an expected delivery time for all the user stories
+can be estimated.</p>
+<p>Projects generally have a time frame. If the expected delivery time
+exceeds the project time frame, then further negotiation is needed
+between the team and client, even if a common vision was agreed upon
+by both parties. Common ways to do this include removing user stories
+or changing their scopes or reach.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p><strong>Your estimation will probably be wrong.</strong> Humans are exceptionally
+  bad at estimating time, especially under-estimating. Do your best to
+  keep the estimation as honest and real as possible.</p>
+</li>
+<li>
+<p><strong>Account for testing, deployment, bugfixing and other changes.</strong>
+  You will not always be building new features in the project. Account
+  for time building tests for the codebase, time spent making sure
+  deployment works, bugfixing or design changes.</p>
+</li>
+<li>
+<p>If you find yourself using big story points for a user story, or
+  needing higher story points, consider splitting your user stories
+  into smaller more manageable user stories.</p>
+</li>
+<li>
+<p>Keep your estimations up-to-date in the project's [Trello] board.</p>
+</li>
+</ul></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p>talPor Solutions 2015</p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../js/jquery-1.10.2.min.js"></script>
+        <script src="../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../js/highlight.pack.js"></script>
+        <script>var base_url = '..';</script>
+        <script data-main="../mkdocs/js/search.js" src="../mkdocs/js/require.js"></script>
+        <script src="../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
