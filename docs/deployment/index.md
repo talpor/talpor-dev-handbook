@@ -1,5 +1,4 @@
-Deployment phase
-------------------------------
+## The Deployment Phase
 
 A deploy is when you push your local changes to either the
 staging/development server or the production server. It doesn't just

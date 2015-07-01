@@ -26,24 +26,24 @@ problems down the road. As with the discovery meetings, take time to
 schedule *pre-* and *post-meetings* where you review what was done and
 what will be done now.
 
-Always keep in mind:
 
-- Use tools to aid your communication. Set up [Slack] for real time
-  communication with the client, set up [Trello] to track what is being
-  done. Use the integrations between your tools, for example
-  Slack-Trello integration can be useful to notify the client new
-  changes are up.
+What you should do to onboard the project:
 
-- Schedule your client meetings. **Be on time**. If you are being
-  dilligent about keeping your communication paths open, meetings
-  should be just a summary of what was done and what is going to be
-  worked on during the week.
-
-- **Avoid using meetings for testing and bug reports**. Forward
-  problems to the right communication channels. This helps keep
-  meetings straightforward, and helps you keep track of what needs to
-  be done.
-
+- Set up [Slack](http://www.slack.com) for real time communication with the client.
+  This involves going to [Slack](http://www.slack.com) and create an account with
+  the name of the product or company (i.e. [http://talpor.slack.com](http://talpor.slack.com)).
+- Set up a board on [Trello](http://www.trello.com) in the talPor organization to
+  track what is being done on the project. Create the recommended lists from our
+  [Trello section](methodology/trello.md) of the methodology docs.
+- Use the integrations between your tools, for example Slack-Trello integration
+  can be useful to notify the client new changes are deployed.
+- Schedule a fixed day and time for the weekly meeting with your client.
+  **Be on time**. If you are being dilligent about keeping your communication
+  paths open, meetings should be just a summary of what was done and what is going
+  to be worked on during the week.
+- Schedule meetings with your teammates before and after the weekly meeting.
+  Details on what to do at each of these meetings can be found in the
+  [Meeting section](methodology/meetings.md) of the Methodology docs.
 ### Methodology
 
 For our development process we use an agile methodology. Our methodology draws

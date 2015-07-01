@@ -1,5 +1,4 @@
-On the project conception phase
--------------------------------
+## The Conception Phase
 
 The conception phase begins at the moment a new project walks through
 the door. The main focus in this stage is understanding the
@@ -183,4 +182,5 @@ Always keep in mind:
   needing higher story points, consider splitting your user stories
   into smaller more manageable user stories.
 
-- Keep your estimations up-to-date in the project's [Trello] board.
+- Keep your estimations up-to-date in the project's [Trello](https://trello.com)
+  board.

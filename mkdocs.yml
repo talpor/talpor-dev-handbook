@@ -11,18 +11,11 @@ pages:
   - 'Methodology':
     - 'Introduction': 'development/methodology/index.md'
     - 'PostMortem': 'development/methodology/post-mortem.md'
+    - 'Meetings': 'development/methodology/meetings.md'
     - 'Trello': 'development/methodology/trello.md'
     - 'Done': 'development/methodology/done.md'
-  - 'Tech Standards':
-    - 'Introduction': 'development/tech/index.md'
-    - 'Code Reviews': 'development/tech/code-reviews.md'
-    - 'Coding Style': 'development/tech/coding-style.md'
-    - 'Source Control': 'development/tech/source-control.md'
-    - 'Hotfixes': 'development/tech/hotfixes.md'
-    - 'Tech Stack': 'development/tech/tech-stack.md'
-    - 'Testing': 'development/tech/testing.md'
-    - 'Staging': 'development/tech/staging.md'
-    - 'Security': 'development/tech/security.md'
-    - 'Provisioning': 'development/tech/provisioning.md'
-- Deployment: 'deployment/index.md'
+  - 'Tech Standards': 'development/tech/index.md'
+- Deployment:
+  - 'The Deployment Phase': 'deployment/index.md'
+  - 'Continuous Integration': 'deployment/continuous-integration.md'
 - Wrap-up: wrapup.md
