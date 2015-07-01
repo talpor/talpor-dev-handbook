@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../../../../../../images/favicon.ico">
         
 
-	<title>Provisioning - talPor Handbook</title>
+	<title>Meetings - talPor Handbook</title>
 
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -83,25 +83,31 @@
         
             
 <li >
-    <a href="../../methodology/">Introduction</a>
+    <a href="../">Introduction</a>
 </li>
 
         
             
 <li >
-    <a href="../../methodology/post-mortem/">PostMortem</a>
+    <a href="../post-mortem/">PostMortem</a>
+</li>
+
+        
+            
+<li class="active">
+    <a href="./">Meetings</a>
 </li>
 
         
             
 <li >
-    <a href="../../methodology/trello/">Trello</a>
+    <a href="../trello/">Trello</a>
 </li>
 
         
             
 <li >
-    <a href="../../methodology/done/">Done</a>
+    <a href="../done/">Done</a>
 </li>
 
         
@@ -110,72 +116,9 @@
 
                         
                             
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Tech Standards</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="../">Introduction</a>
+    <a href="../../tech/">Tech Standards</a>
 </li>
-
-        
-            
-<li >
-    <a href="../code-reviews/">Code Reviews</a>
-</li>
-
-        
-            
-<li >
-    <a href="../coding-style/">Coding Style</a>
-</li>
-
-        
-            
-<li >
-    <a href="../source-control/">Source Control</a>
-</li>
-
-        
-            
-<li >
-    <a href="../hotfixes/">Hotfixes</a>
-</li>
-
-        
-            
-<li >
-    <a href="../tech-stack/">Tech Stack</a>
-</li>
-
-        
-            
-<li >
-    <a href="../testing/">Testing</a>
-</li>
-
-        
-            
-<li >
-    <a href="../staging/">Staging</a>
-</li>
-
-        
-            
-<li >
-    <a href="../security/">Security</a>
-</li>
-
-        
-            
-<li class="active">
-    <a href="./">Provisioning</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                         
                         </ul>
@@ -183,8 +126,23 @@
                 
                 
                 
-                    <li >
-                        <a href="../../../deployment/">Deployment</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Deployment <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../../deployment/">The Deployment Phase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../../deployment/continuous-integration/">Continuous Integration</a>
+</li>
+
+                        
+                        </ul>
                     </li>
                 
                 
@@ -205,12 +163,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../security/">
+                        <a rel="next" href="../post-mortem/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../../../deployment/">
+                        <a rel="prev" href="../trello/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -235,43 +193,92 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#provisioning-and-reproducibility">Provisioning and Reproducibility</a></li>
+        <li class="main active"><a href="#meetings">Meetings</a></li>
+        
+            <li><a href="#meeting-tips">Meeting tips</a></li>
+        
+            <li><a href="#weekly-meetings">Weekly Meetings</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h3 id="provisioning-and-reproducibility">Provisioning and Reproducibility</h3>
-<p>Spend time figuring out how to make the different environments in your
-project easily reproducible. Getting someone on-board on the project
-should be relatively fast and easy. Adding a new server should also be
-relatively painless. Keep clear documentation on how to install a
-development environment and how to perform a staging and production
-deploy.</p>
-<p>Always keep in mind:</p>
+<h2 id="meetings">Meetings</h2>
+<p>Meetings are very important in the development process, they ensure that everybody
+is on the same page and we can received feedback from our clients. But at the same
+time meetings can become a painful process were the team feels that it's losing
+valuable time.</p>
+<h3 id="meeting-tips">Meeting tips</h3>
+<p>Before digging in to the particular process that we use at talPor,
+it would be useful to keep some tips in mind to transform meetings into a productive
+tool and a competitive advantage:</p>
 <ul>
-<li>
-<p>Use your technology stack dependency managers. For example, if you
-  are using python use [pip].</p>
-</li>
-<li>
-<p>There are several up and coming projects that handle reproducible
-  environments. At talPor, we have successfully used [Vagrant] and
-  [Docker] in the past.</p>
-</li>
-<li>
-<p>Try to make your local environment as close to staging as possible
-  and staging as close to production as possible.</p>
-</li>
-<li>
-<p>Be pragmatic about the previous point. You don't need a load
-  balancer to run your local setup.</p>
-</li>
-<li>
-<p>Read on the deployment phase for more advice.</p>
-</li>
-</ul></div>
+<li><strong>Start on time and finish on time</strong>. People appreciate it when you understand that
+  their time is valuable. Another note on time: Do not schedule any meetings to last
+  longer than an hour. Sixty minutes is generally the longest time workers can
+  remain truly engaged.</li>
+<li><strong>Stick to your schedule</strong>. Create an agenda that lays out everything you plan
+  to cover in the meeting. Once you're in the meeting, put that agenda somewhere
+  accessible for everyone (Trello is a great alternative) and guide the flow of
+  the meeting according to the points that are reflected there. This keeps
+  people focused.</li>
+<li><strong>Identify who is responsible for leading each topic</strong>. Someone other than the
+  formal meeting leader is often responsible for leading the discussion of a
+  particular agenda item. This person may be providing context for the topic,
+  explaining data, or may have organizational responsibility for that area.
+  Identifying this person next to the agenda item ensures that anyone who is
+  responsible for leading part of the agenda knows it -- and prepares for it
+  -- before the meeting.</li>
+<li><strong>Recap decisions and actions just before the meeting ends</strong>. For productive
+  meetings, the end is just as important as the beginning. Don't let people leave
+  the meeting in silent disagreement.</li>
+<li><strong>Follow up</strong>. It's quite common for people to come away from the same meeting
+  with very different interpretations of what went on. To reduce this risk, use
+  Trello to highlight what was accomplished to all who attended, document the
+  responsibilities given, tasks delegated, and any assigned deadlines.
+  This way, everyone will be on the same page.</li>
+</ul>
+<h3 id="weekly-meetings">Weekly Meetings</h3>
+<p>At talPor we use weekly meetings to keep track of the progress of each project.
+Ideally these meetings happen every week, at the same day, at the same time and
+are split into three meetings.</p>
+<h4 id="pre-meeting">Pre-meeting</h4>
+<p>This meeting is just for the development team, it usually happens
+just before meeting with the client. The key objective here is to make sure that
+the team is on the same page with the line of communication that is going to be
+delivered to the client.  It's important that everyone is clear about what you
+will and won't say as well as how things will be presented. Take time to prepare
+strategies to confront possible problems or difficult situations that could arise
+during the next meeting. Use the shared agenda with the client to make sure that
+you can handle all the points reflected there. After the "Pre-meeting" the team
+has to be able to explain the progress of the week, give feedback related to the
+overall scope of the project and have a proposal of what is going to be the
+focus of the next week.</p>
+<h4 id="client-meeting">Client Meeting</h4>
+<p>At this point the client joins the development team and the idea is to
+answer the following questions</p>
+<ul>
+<li>What was last week's progress?</li>
+<li>Did we fulfill the expectations the team had? If we didn't, explain why and
+  how does that affects our schedule.</li>
+<li>How are we in regards to our schedule?</li>
+<li>Are we meeting any particular deadline established with the client?</li>
+<li>Is there any change in the scope of the project?</li>
+<li>What is going to be the expectation for the next week?</li>
+</ul>
+<p>This meeting is definitely key in the relationship with the clients, but it's
+important to maintain constant communication with them over the week to show
+any progress, because if we use this meeting to show new features the meeting
+is going to take a long time.</p>
+<p><strong>Slack</strong> is your best tool for constant and effective communication.</p>
+<p>Keep the project's <strong>Trello</strong> board updated and do your best to
+engage the client there to receive as much feedback as possible before the meeting.</p>
+<h4 id="post-meeting">Post-meeting</h4>
+<p>This happens immediately after the meeting with the client
+and is just for the development team. The goal is to make sure that everyone
+knows their respective responsibilities. Use this time to update Trello according
+to the feedback received in the previous meeting.</p></div>
             
         </div>
 

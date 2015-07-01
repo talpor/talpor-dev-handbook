@@ -32,19 +32,27 @@
     </url>
         
     <url>
-     <loc>None</loc>
-     <lastmod></lastmod>
+     <loc>None/development/tech/</loc>
+     <lastmod>2015-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     
 
     
+        
     <url>
      <loc>None/deployment/</loc>
      <lastmod>2015-07-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
+        
+    <url>
+     <loc>None/deployment/continuous-integration/</loc>
+     <lastmod>2015-07-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
     
 
     

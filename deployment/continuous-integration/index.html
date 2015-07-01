@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../../images/favicon.ico">
+        
+
+	<title>Continuous Integration - talPor Handbook</title>
+
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+
+            <!-- Main title -->
+            <a class="navbar-brand" href="../..">talPor Handbook</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+            
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                
+                
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../conception/">Conception</a>
+                    </li>
+                
+                
+                
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Development <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../development/">Introduction</a>
+</li>
+
+                        
+                            
+  <li class="dropdown-submenu">
+    <a tabindex="-1" href="">Methodology</a>
+    <ul class="dropdown-menu">
+        
+            
+<li >
+    <a href="../../development/methodology/">Introduction</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../development/methodology/post-mortem/">PostMortem</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../development/methodology/meetings/">Meetings</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../development/methodology/trello/">Trello</a>
+</li>
+
+        
+            
+<li >
+    <a href="../../development/methodology/done/">Done</a>
+</li>
+
+        
+    </ul>
+  </li>
+
+                        
+                            
+<li >
+    <a href="../../development/tech/">Tech Standards</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Deployment <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../">The Deployment Phase</a>
+</li>
+
+                        
+                            
+<li class="active">
+    <a href="./">Continuous Integration</a>
+</li>
+
+                        
+                        </ul>
+                    </li>
+                
+                
+                
+                    <li >
+                        <a href="../../wrapup/">Wrap-up</a>
+                    </li>
+                
+                
+                </ul>
+            
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                
+                    <li >
+                        <a rel="next" href="../">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../../wrapup/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+                
+                
+                    <li>
+                        <a href="https://github.com/talpor/talpor-handbook/">
+                            
+                                <i class="fa fa-github"></i>
+                            
+                            GitHub
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+            
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+    
+        <li class="main active"><a href="#continuous-integration-at-talpor">Continuous Integration at talPor</a></li>
+        
+            <li><a href="#technology-choices">Technology choices</a></li>
+        
+            <li><a href="#version-controlling-for-good-ci">Version Controlling for Good CI</a></li>
+        
+            <li><a href="#stacking-environments">Stacking Environments</a></li>
+        
+            <li><a href="#the-generic-pipeline">The Generic Pipeline</a></li>
+        
+            <li><a href="#notifications-broken-builds">Notifications &amp; Broken Builds</a></li>
+        
+    
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="continuous-integration-at-talpor">Continuous Integration at talPor</h2>
+<p>This is an overview of how Continuous Integration (CI) is done at
+talPor. All that is documented here is basically what we believe to be
+the best approach for integrating your project into our internal CI
+workflow. Read it, and make the changes you believe are needed for
+your project.</p>
+<h3 id="technology-choices">Technology choices</h3>
+<p>This is an opinionated document. While we don't force you to use any
+of the stuff that is talked about in here, the tools we have developed
+assume many of the practices we preach about here. Particularly, our
+technology choices are based around the internal desire of simple
+reproducibility and commitment to ship better software that scales
+gracefully.</p>
+<p>The only technology choice that cannot be avoided is <strong>Jenkins</strong> as it
+is the selected CI workhorse. Besides that, all choices can be changed
+as needed. However, in this document we assume the following:</p>
+<ol>
+<li>
+<p><strong>Docker from development to production</strong>. Every possible
+   environment has a relevant image. Every process is dockerized into a
+   container. We recommend using our <strong>docker registry</strong> to store
+   images and share them with your peers and between servers.</p>
+</li>
+<li>
+<p><strong>Fabric</strong> is used to encapsulate steps in the workflow and help
+   keep things reproducible. <strong>Helper tasks</strong> are maintained by our
+   developers.</p>
+</li>
+</ol>
+<h3 id="version-controlling-for-good-ci">Version Controlling for Good CI</h3>
+<p>The general idea of a CI workflow is as follows:</p>
+<p><code>git push origin master -&gt; Begin CI Pipeline -&gt; If everything is OK (i.e. all tests pass) -&gt;
+Push new build</code></p>
+<p>At talPor, we follow Git Flow. As it is recommended, we have a
+mainline which is what production is currently running, and a
+development line which is where all development happens. Our mainline
+branch is called <code>production</code> and our development branch is called
+<code>development</code> (some projects call it staging). As can be expected,
+production servers run on top of the <code>production</code> branch, and
+development/staging servers run on top of the <code>development</code> branch.</p>
+<p>Developers create feature branches on top of <code>development</code>. When a new
+feature is ready, it is merged into <code>development</code>.  When a new push is
+ready to be made to production, <code>development</code> is merged into it and
+then pushed. A similar process happens when there is a hotfix that
+needs to be applied.</p>
+<p>We have extended Git Flow to follow a better suited CI flow. The
+general idea of CI is that every change that makes it into <code>development</code>
+and <code>production</code> should be as problem-free as possible. As such, we have
+decided to make the invariant of the <code>development</code> branch the following:</p>
+<p><strong>At any given moment, <code>development</code> is a candidate release of the project.</strong></p>
+<p>As such, <code>development</code> should be ready to be merged into <em>production</em>
+and be as problem-free as possible. We define <em>problem-free</em> as <strong>all
+tests pass</strong>. To avoid human error (merges when some test fails), when
+using CI, <code>development</code> is handled by a machine (i.e. changes are
+pushed by Jenkins), and <strong>it is not allowed to manually push changes
+into it</strong>. To allow for development to happen, we have added a new
+branch, <code>master</code>, in which development continues normally.</p>
+<h3 id="stacking-environments">Stacking Environments</h3>
+<p>If you are using Docker containers, we strongly suggest you
+encapsulate your environments into different images for each
+environment. Try to move common and repeated behavior into common
+images, and extend those images.</p>
+<ul>
+<li>
+<p><strong>Common.</strong> The common steps in all your images. This is the root of
+  your build tree. Common tasks to perform here are installing system
+  dependencies and setting up global environment variables.</p>
+</li>
+<li>
+<p><strong>Local (extends Common).</strong> The environment developers will use in
+  their personal machines. Common tasks to perform here are installing
+  developer tools and requirements for local.</p>
+</li>
+<li>
+<p><strong>Testing (extends Common).</strong> The environment where tests are
+  run. This environment is central to CI. Make sure running your tests
+  is the entrypoint for this environment.</p>
+</li>
+<li>
+<p><strong>Production (extends Common).</strong> The environment used by production
+  servers.</p>
+</li>
+<li>
+<p><strong>Development (extends Production).</strong> The environment used in
+  staging or development servers. Should be as similar to production
+  as possible.</p>
+</li>
+</ul>
+<p>Since keeping all your environment up-to-date can be a hassle, we have
+an internal Docker registry where we store the latest images so they
+can be pulled from as soon as a build is done.</p>
+<h3 id="the-generic-pipeline">The Generic Pipeline</h3>
+<p>Our recommended CI pipeline for our software projects is described
+below. The first step is triggered when a push with changes on
+<code>master</code> is received.</p>
+<ol>
+<li>
+<p><strong>Build new Docker images, if necessary.</strong> Checks into the new
+   pushed files are performed to detect whether or not to trigger a
+   build. <strong>Only relevant environment should be rebuilt</strong>. For
+   example, if the Common needs to be rebuilt, every image needs to be
+   rebuilt, but if the Production image needs to be rebuilt, only
+   Production and Development needs rebuilding. If any image fails to
+   be built, the pipeline is stopped, and developers notified.</p>
+</li>
+<li>
+<p><strong>Run Tests.</strong> Using your Testing environment, spin a new
+   container, and wait for tests to run. If all tests pass, move to
+   step 3. If any test fail, then notify developers a build has failed
+   to build.</p>
+</li>
+<li>
+<p><strong>Push changes.</strong> Merge <code>master</code> into development (those changes
+   don't break anything), and push all the rebuilt images to the
+   registry.</p>
+</li>
+<li>
+<p><strong>Deploy</strong>. Deploy changes to all the environment you want. By
+   default, we suggest automatically pushing into staging/development
+   and manually pushing to production when wanted.</p>
+</li>
+</ol>
+<h3 id="notifications-broken-builds">Notifications &amp; Broken Builds</h3>
+<p>Notifications happen any time that a build fails. <strong>When a build
+fails, the whole team should focus on making <code>master</code> succesfully
+build again</strong>. Notifications are sent via email to developers and team
+members, and Slack spam happens. <strong>Don't ignore broken builds.</strong></p></div>
+            
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            
+                <p>talPor Solutions 2015</p>
+            
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            From here you can search these documents. Enter
+                            your search terms below.
+                        </p>
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                            </div>
+                        </form>
+                        <div id="mkdocs-search-results"></div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

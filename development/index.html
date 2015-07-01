@@ -95,6 +95,12 @@
         
             
 <li >
+    <a href="methodology/meetings/">Meetings</a>
+</li>
+
+        
+            
+<li >
     <a href="methodology/trello/">Trello</a>
 </li>
 
@@ -110,72 +116,9 @@
 
                         
                             
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Tech Standards</a>
-    <ul class="dropdown-menu">
-        
-            
 <li >
-    <a href="tech/">Introduction</a>
+    <a href="tech/">Tech Standards</a>
 </li>
-
-        
-            
-<li >
-    <a href="tech/code-reviews/">Code Reviews</a>
-</li>
-
-        
-            
-<li >
-    <a href="tech/coding-style/">Coding Style</a>
-</li>
-
-        
-            
-<li >
-    <a href="tech/source-control/">Source Control</a>
-</li>
-
-        
-            
-<li >
-    <a href="tech/hotfixes/">Hotfixes</a>
-</li>
-
-        
-            
-<li >
-    <a href="tech/tech-stack/">Tech Stack</a>
-</li>
-
-        
-            
-<li >
-    <a href="tech/testing/">Testing</a>
-</li>
-
-        
-            
-<li >
-    <a href="tech/staging/">Staging</a>
-</li>
-
-        
-            
-<li >
-    <a href="tech/security/">Security</a>
-</li>
-
-        
-            
-<li >
-    <a href="tech/provisioning/">Provisioning</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                         
                         </ul>
@@ -183,8 +126,23 @@
                 
                 
                 
-                    <li >
-                        <a href="../deployment/">Deployment</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Deployment <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../deployment/">The Deployment Phase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../deployment/continuous-integration/">Continuous Integration</a>
+</li>
+
+                        
+                        </ul>
                     </li>
                 
                 
@@ -269,27 +227,23 @@ listen. Good communication between the team members avoids bugs and
 problems down the road. As with the discovery meetings, take time to
 schedule <em>pre-</em> and <em>post-meetings</em> where you review what was done and
 what will be done now.</p>
-<p>Always keep in mind:</p>
+<p>What you should do to onboard the project:</p>
 <ul>
-<li>
-<p>Use tools to aid your communication. Set up [Slack] for real time
-  communication with the client, set up [Trello] to track what is being
-  done. Use the integrations between your tools, for example
-  Slack-Trello integration can be useful to notify the client new
-  changes are up.</p>
-</li>
-<li>
-<p>Schedule your client meetings. <strong>Be on time</strong>. If you are being
-  dilligent about keeping your communication paths open, meetings
-  should be just a summary of what was done and what is going to be
-  worked on during the week.</p>
-</li>
-<li>
-<p><strong>Avoid using meetings for testing and bug reports</strong>. Forward
-  problems to the right communication channels. This helps keep
-  meetings straightforward, and helps you keep track of what needs to
-  be done.</p>
-</li>
+<li>Set up <a href="http://www.slack.com">Slack</a> for real time communication with the client.
+  This involves going to <a href="http://www.slack.com">Slack</a> and create an account with
+  the name of the product or company (i.e. <a href="http://talpor.slack.com">http://talpor.slack.com</a>).</li>
+<li>Set up a board on <a href="http://www.trello.com">Trello</a> in the talPor organization to
+  track what is being done on the project. Create the recommended lists from our
+  <a href="methodology/trello/">Trello section</a> of the methodology docs.</li>
+<li>Use the integrations between your tools, for example Slack-Trello integration
+  can be useful to notify the client new changes are deployed.</li>
+<li>Schedule a fixed day and time for the weekly meeting with your client.
+  <strong>Be on time</strong>. If you are being dilligent about keeping your communication
+  paths open, meetings should be just a summary of what was done and what is going
+  to be worked on during the week.</li>
+<li>Schedule meetings with your teammates before and after the weekly meeting.
+  Details on what to do at each of these meetings can be found in the
+  <a href="methodology/meetings/">Meeting section</a> of the Methodology docs.</li>
 </ul>
 <h3 id="methodology">Methodology</h3>
 <p>For our development process we use an agile methodology. Our methodology draws

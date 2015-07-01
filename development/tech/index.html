@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../../../../images/favicon.ico">
         
 
-	<title>Introduction - talPor Handbook</title>
+	<title>Tech Standards - talPor Handbook</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -95,6 +95,12 @@
         
             
 <li >
+    <a href="../methodology/meetings/">Meetings</a>
+</li>
+
+        
+            
+<li >
     <a href="../methodology/trello/">Trello</a>
 </li>
 
@@ -110,72 +116,9 @@
 
                         
                             
-  <li class="dropdown-submenu">
-    <a tabindex="-1" href="">Tech Standards</a>
-    <ul class="dropdown-menu">
-        
-            
 <li class="active">
-    <a href="./">Introduction</a>
+    <a href="./">Tech Standards</a>
 </li>
-
-        
-            
-<li >
-    <a href="code-reviews/">Code Reviews</a>
-</li>
-
-        
-            
-<li >
-    <a href="coding-style/">Coding Style</a>
-</li>
-
-        
-            
-<li >
-    <a href="source-control/">Source Control</a>
-</li>
-
-        
-            
-<li >
-    <a href="hotfixes/">Hotfixes</a>
-</li>
-
-        
-            
-<li >
-    <a href="tech-stack/">Tech Stack</a>
-</li>
-
-        
-            
-<li >
-    <a href="testing/">Testing</a>
-</li>
-
-        
-            
-<li >
-    <a href="staging/">Staging</a>
-</li>
-
-        
-            
-<li >
-    <a href="security/">Security</a>
-</li>
-
-        
-            
-<li >
-    <a href="provisioning/">Provisioning</a>
-</li>
-
-        
-    </ul>
-  </li>
 
                         
                         </ul>
@@ -183,8 +126,23 @@
                 
                 
                 
-                    <li >
-                        <a href="../../deployment/">Deployment</a>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Deployment <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                        
+                            
+<li >
+    <a href="../../deployment/">The Deployment Phase</a>
+</li>
+
+                        
+                            
+<li >
+    <a href="../../deployment/continuous-integration/">Continuous Integration</a>
+</li>
+
+                        
+                        </ul>
                     </li>
                 
                 
@@ -210,7 +168,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="code-reviews/">
+                        <a rel="prev" href="../../deployment/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -235,15 +193,368 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#introduction">Introduction</a></li>
+        <li class="main active"><a href="#tech-standards">Tech Standards</a></li>
+        
+            <li><a href="#source-control">Source Control</a></li>
+        
+            <li><a href="#technology-stack">Technology Stack</a></li>
+        
+            <li><a href="#style">Style</a></li>
+        
+            <li><a href="#code-reviews">Code Reviews</a></li>
+        
+            <li><a href="#testing">Testing</a></li>
+        
+            <li><a href="#provisioning-and-reproducibility">Provisioning and Reproducibility</a></li>
+        
+            <li><a href="#staging">Staging</a></li>
+        
+            <li><a href="#hotfixes">Hotfixes</a></li>
+        
+            <li><a href="#security">Security</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="introduction">Introduction</h2>
-<p>This is just a dummy text</p></div>
+<h2 id="tech-standards">Tech Standards</h2>
+<h3 id="source-control">Source Control</h3>
+<p>From the get go, use version control. This is not negotiable. At
+talPor we use <a href="https://git-scm.com/">Git</a> exclusively. For open source code,
+we publish at <a href="https://github.com/">GitHub</a> and for everything else we use
+internal Git repositories.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p><strong>Don't rewrite public story!</strong> Bad stuff happens when you do that,
+    kittens die. Just don't do it.</p>
+</li>
+<li>
+<p>Try to make your commits as atomic as possible. If you feel like you
+  have many commits that don't quite work up to a feature (which you
+  have not yet pushed), you can squash them with a rebase.</p>
+</li>
+<li>
+<p>Follow <a href="http://nvie.com/posts/a-successful-git-branching-model">Git Flow</a>. However, we keep master as develop, and production as master. Use feature and hotfix branches.</p>
+</li>
+<li>
+<p>Write good commit messages. Use a good headline and, if needed,
+  follow it by further details about the commit.</p>
+</li>
+<li>
+<p>Cherish the existence of <code>cherry-pick</code> and <code>bisect</code>. Learn how and when
+  to use <code>rebase</code> and <code>reset</code>.</p>
+</li>
+</ul>
+<h3 id="technology-stack">Technology Stack</h3>
+<p>Choosing the project technology stack is one of the most important and
+lasting decisions of a project. It's almost cruel that such an
+important decision has to be made so early in a project life when so
+many unknowns remain. When selecting the project technology stack,
+many factors have to be balanced:</p>
+<ol>
+<li>Stable tools with strong ecosystems and communities.</li>
+<li>Tools which helps us develop fast, and iterate quickly.</li>
+<li>Tools that will make us happy.</li>
+</ol>
+<p>Many times is easy to select the hip technology for a project that
+actually requires something radically different, and boring. Selecting
+the technology stack is a lasting decision that should be <strong>agreed
+upon</strong> by the team members.</p>
+<p>The following subsections list some of the common choices we have made
+at talPor, and some of the things to look out for.</p>
+<h4 id="web-apps">Web apps</h4>
+<p>We are primarily a <a href="https://www.python.org/">Python</a> shop. We generally use
+<a href="https://www.djangoproject.com/">Django</a> for our projects, although we have
+successfully used <a href="http://flask.pocoo.org/">Flask</a> for smaller projects.
+Additionally, we have dipped our toes in the <a href="https://nodejs.org/">Node.js</a> and
+<a href="http://rubyonrails.org/">Rails</a> world with varying levels of success.</p>
+<p>We prefer Python and Django on the backend because there are no
+surprises. There is no magic, there are no strongly held opinions but
+rather a set of conventions to follow.</p>
+<p>On the frontend, we use plain Javascript. We generally work on top of
+a framework. We have used <a href="https://angular.io/">Angular</a>,
+<a href="http://backbonejs.org/">Backbone</a>, and <a href="http://facebook.github.io/react/">React</a>
+in the past. Styling is generally done using a combination of
+<a href="http://sass-lang.com/">SASS</a> and <a href="http://compass-style.org/">Compass</a>.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p>Use starting skeletons for your projects. For Django we have found a
+  lot of success using
+  <a href="https://github.com/pydanny/cookiecutter-django">Cookiecutter Django</a>
+  and for Javascript we have enjoyed using
+  <a href="http://yeoman.io/generators/">Yeoman Generators</a>.</p>
+</li>
+<li>
+<p><strong>Be pragmatic.</strong> Choose the right tool for the job.</p>
+</li>
+</ul>
+<h4 id="mobile-apps">Mobile apps</h4>
+<p>Make the pragmatic choice. While the experience is always better on
+native applications over hybrid applications, sometimes the choice has
+to be made in the interest of development time and resources.</p>
+<p>At talPor we have taken on projects that were built on top of
+<a href="http://cordova.apache.org/">Cordova</a> using
+<a href="http://ionicframework.com/">Ionic Framework</a> with great results.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p>Select with your current project in mind. If your project needs
+  access to the latest iOS or Android features which have not landed
+  yet on PhoneGap, maybe going native is the best choice.</p>
+</li>
+<li>
+<p>From a designer point-of-view, designing for Android and iOS are
+  completely different stories. From screen size to the expected user
+  experience, it's all different. Keep this in mind when you decide to
+  go hybrid route.</p>
+</li>
+</ul>
+<h4 id="databases">Databases</h4>
+<p>We are strongly biased towards using
+<a href="http://www.postgresql.org/">Postgres</a> for every new project. There
+are some up and coming NoSQL stores, like Mongo, but we deem them a
+little too immature for production.</p>
+<p>However, we love and use <a href="http://redis.io/">Redis</a> as a K-V store,
+generally for caching and the backend for job queues.</p>
+<h4 id="tooling">Tooling</h4>
+<p>Choose tools that help you during all the project stages. Your tools
+should help you while you are developing by providing a good
+development environment. Your tools should help you make the
+transition from local to staging and production as painlessly as
+possible.</p>
+<p>We primarily use <a href="http://www.fabfile.org">Fabric</a>, on top of the
+common system tools we already have available. We also enjoy using
+<a href="http://www.docker.com">Docker</a> to aid environment
+reproducibility. Other great tools are <a href="http://gruntjs.com/">Grunt</a>
+and <a href="http://gulpjs.com/">Gulp</a>.</p>
+<h4 id="services">Services</h4>
+<p>There are several services that solve many common problems. Don't be
+afraid to use them if they save considerable amount of development
+time. For example, <a href="https://mandrill.com/">Mandrill</a> solves the
+problem of transactional email beautifully with almost no overhead in
+integration with the existing codebase.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>Consider using services that fix non mission critical parts of your
+  project. Evaluate them, and use them if they shorten your
+  development time.</li>
+</ul>
+<h3 id="style">Style</h3>
+<p>Whatever your technology stack, write code as idiomatically as you
+can. Dive into your technology stack code style, follow their style,
+and avoid making one sided decisions. As a common rule of thumb, when
+you want to do something non-idiomatic, you should be able to first
+convince a teddy bear and then convince a team member.</p>
+<p>If you need to define code style for your project (i.e. we inherited a
+code base), document it and follow it religiously.</p>
+<p>Over anything, <strong>emphasize clean code and readability</strong>. Use comments
+to explain non obvious code paths. <strong>Don't be clever</strong>. Don't over
+optimize for the 1% case, think of the 99% case. If the 1% case
+becomes a reality, you will be thankful you didn't implement the
+overly complicated, obfuscated option but the easy to follow and to
+the point option.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p>Many languages have a style guide. For example, Python has
+  <a href="https://www.python.org/dev/peps/pep-0008/">PEP-8</a>.</p>
+</li>
+<li>
+<p>Many frameworks also have a style guide. For example, Django has its
+  <a href="https://docs.djangoproject.com/en/1.7/internals/contributing/writing-code/coding-style/">Coding Style guidelines</a>.</p>
+</li>
+<li>
+<p>There are many community-driven and company-driven efforts to define
+  good style. We enjoy following AirBnB's
+  <a href="https://github.com/airbnb/javascript/">JavaScript Coding Style</a>. Google
+  also maintains a repository of style guides for their C++, Python,
+  Angular projects, among others.</p>
+</li>
+<li>
+<p>When no obvious choice can be made regarding style, select a style
+  guide by consensus, and follow it religiously.</p>
+</li>
+<li>
+<p>Use linters. Set them up to follow the agreed upon code style in
+  your project. Add configuration files to your Git repositories if
+  necessary.</p>
+</li>
+</ul>
+<h3 id="code-reviews">Code Reviews</h3>
+<p>Code reviews are what happens when another person looks at code you
+want to commit or have already commited. The main reason to have code
+reviews is aid <strong>code maintainability and catch problems early</strong>. In
+small teams, it ensures that at least two pair of eyes are familiar
+with every bit of the codebase.</p>
+<p>At the moment, code reviews happen on a request basis. We follow a
+<em>pre-commit</em>, or <em>pre-push</em> philosophy. When you want a code review,
+you can either request it to one of your team members, or request it
+to another coworker. Once your code is approved by your reviewers, you
+can proceed to merge your code with <code>master</code>.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p>It's easier (and faster) to request a code review on small changes
+  (less than 100 lines) than on a huge feature (over 1000
+  lines). <strong>Push early, and push often</strong>. If you anticipate a big
+  feature which you want to have code reviewed, start requesting code
+  reviews as soon as possible and work on them incrementally.</p>
+</li>
+<li>
+<p><strong>Pre-review your code.</strong> Everybody's time is valuable. Don't
+  request code reviews on code that doesn't follow code conventions,
+  lacks testing, or is sloppy. As a rule of thumb, ask yourself if you
+  would accept your code if you were the reviewer.</p>
+</li>
+<li>
+<p>If you are reviewing code, handle requests promptly. If you don't
+  understand something stop early and ask for clarifications (either a
+  rewrite of that chunk, or better comment structure). <strong>Don't reject
+  code because you would have done it differently</strong>. The main purpose
+  of code reviews is to have <strong>maintainable code</strong>.</p>
+</li>
+<li>
+<p>If a reviewer and a reviewee can't agree over a point, bring a third
+  party (another reviewer) to mediate.</p>
+</li>
+</ul>
+<h3 id="testing">Testing</h3>
+<p>We strive for 100% testing coverage. Write tests religiously for your
+code. Test both your backend and frontend, your logic, and common code
+paths. Test for invalid inputs, and malicious inputs. <strong>Try to break
+your code</strong>. It is a lot better if you break it locally, rather than
+on production.</p>
+<p>While we are not strongly opinionated on the approach you take (TDD?
+BDD? Red-Green-Refactor?), your codebase should be tested
+against. Prefer throughly tested libraries, frameworks and apps over
+poorly tested ones.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p>Good testing means shiping working code. <strong>Be religious about
+  testing your codebase.</strong></p>
+</li>
+<li>
+<p>No testing or poor, sloppy testing will result in bad code
+reviews. Respect your teammates time, write good tests.</p>
+</li>
+<li>
+<p>Testing is central to our continuous integration system. Lacking
+  tests means that we won't be able to catch regressions or problems
+  automatically.</p>
+</li>
+</ul>
+<h3 id="provisioning-and-reproducibility">Provisioning and Reproducibility</h3>
+<p>Spend time figuring out how to make the different environments in your
+project easily reproducible. Getting someone on-board on the project
+should be relatively fast and easy. Adding a new server should also be
+relatively painless. Keep clear documentation on how to install a
+development environment and how to perform a staging and production
+deploy.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p>Use your technology stack dependency managers. For example, if you
+  are using python use <a href="https://pip.pypa.io/en/stable/">pip</a>.</p>
+</li>
+<li>
+<p>There are several up and coming projects that handle reproducible
+  environments. At talPor, we have successfully used
+  <a href="https://www.vagrantup.com/">Vagrant</a> and
+  <a href="https://www.docker.com/">Docker</a> in the past.</p>
+</li>
+<li>
+<p>Try to make your local environment as close to staging as possible
+  and staging as close to production as possible.</p>
+</li>
+<li>
+<p>Be pragmatic about the previous point. You don't need a load
+  balancer to run your local setup.</p>
+</li>
+<li>
+<p>Read on the deployment phase for more advice.</p>
+</li>
+</ul>
+<h3 id="staging">Staging</h3>
+<p>Staging (also known as development) is the environment where the
+client can test the latest changes. Ideally, it is as similar to
+production as possible. Setting up a staging server should be a
+immediate priority as soon as the development phase starts.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p><strong>Keeping staging up-to-date aids communication with your client</strong>. Bugs
+  and issues can be found faster, and dealt with on a timely fashion.</p>
+</li>
+<li>
+<p><strong>Staging should always pass all tests!</strong> Everything on staging is a
+  <em>candidate</em> release of your project. Treat this environment seriously:
+  as <em>few</em>  bugs as possible should make it here.</p>
+</li>
+<li>
+<p>To help automatically keep track of the previous point, we have
+  continuous integration/deployment tools set up in place. Read up on
+  the deployment phase for more advice.</p>
+</li>
+</ul>
+<h3 id="hotfixes">Hotfixes</h3>
+<p>There are several ways to hotfix problems that can happen in
+<code>production</code>. If the problem is already fixed on <code>master</code>, the easiest
+way is to backport the changes. This can be done cherry-picking the
+commits that fixes the problem (you are making atomic commits, right?)</p>
+<p>However, sometimes problems only happen or affect <code>production</code>, in
+this case, you will need to track down the problem and prepare a
+hotfix branch. When you are done fixing the problem, make sure you
+merge against production.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>When hotfixing a problem, your tests should pass afterwards.</li>
+<li>If new tests are needed, add them to your hotfix branch.</li>
+<li>Use <code>git cherry-pick -n</code> to review the changes you are
+  cherry-picking before commiting them into your current branch.</li>
+</ul>
+<h3 id="security">Security</h3>
+<p>Whatever your project or application is, take a minute to understand
+that what you are building will eventually have to deal with malicious
+input and carefully crafted exploits. <strong>Expect the best, but prepare
+for the worse.</strong> Test for malicious inputs, understand common attack
+vectors (XSS, CSRF, SQL Injections, man in the middle, ...) and
+mitigate them. Make sure you are <em>always</em> testing users for the right
+permissions when trying to do something.</p>
+<p>Understand that data in production is extremely valuable, for you,
+your client and your client's clients. <strong>Make scheduled backups and
+store them off-site.</strong></p>
+<p><strong>Use SSL when dealing with sensitive information.</strong> Avoid storing
+credit cards, or other sensitive information, and if you do, read on
+how to do it <em>securely</em>. If you are processing payments, consider
+using established carriers, like <a href="https://stripe.com/">Stripe</a>.</p>
+<p>Stay on top of CVEs and security releases related to your stack. This
+includes system wide exploits related to your OS and libraries, and
+making sure your framework is running on the latest security release.</p>
+<p>Always keep in mind:</p>
+<ul>
+<li>
+<p><strong>Security is a process, not a result.</strong> Plan ahead, dip your toes
+  on the attack vectors, learn to mitigate them.</p>
+</li>
+<li>
+<p>Frameworks like Django offer many built-in security provisions. Use
+  them when possible.</p>
+</li>
+<li>
+<p>Follow sites which track security releases. Our internal
+  communication system is generally updated when a new vulnerability
+  or security release of common software in our stack is released.</p>
+</li>
+<li>
+<p><strong>Don't roll out your own authenticating system.</strong> But if you manage
+  to convince anyone that this is a good idea, please use strong,
+  salted, one way ciphers to store user passwords.</p>
+</li>
+</ul></div>
             
         </div>
 
