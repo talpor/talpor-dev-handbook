@@ -42,7 +42,7 @@ Always keep in mind:
 ### The Feedback Loop
 
 The feedback loop is the shape the discovery process takes as meetings
-with the client takes place. When the first meeting with the client
+with the client take place. When the first meeting with the client
 happens, it is expected that the client will talk and explain the
 project to the team, while the team takes notes and asks questions. In
 this meeting, most of the talk will be done by the client.

@@ -59,12 +59,12 @@ put them to practice.
    comes out of your mounth, they carry emotions, actions, thoughts or attitudes.
    Express yourself with integrity, say what you mean and avoid your *word* to express
    jealousy, envy, frustration, fear or anger. We respect each other ideas and thoughts.
-   
-6. **Don't make assumptions** When you are working on teams, communication is 
+
+6. **Don't make assumptions** When you are working on teams, communication is
    fundamental to guarantee success in any project. You cannot assume what
    others think, so being a little verbose is not that bad. Misunderstandings
-   occurs and you may end up not deploying something into production 
-   because you assumed that another one was going to do it. 
+   occurs and you may end up not deploying something into production
+   because you assumed that another one was going to do it.
 
 ### Who is this for?
 
