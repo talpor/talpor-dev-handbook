@@ -1,19 +1,21 @@
-﻿Methodology
---------------------
+##Introduction
 
-### What are you working on?
+When you are working in a software development team you need a set of 
+well-defined processes to empower organization, communication and efficient 
+work. Moreover, inside a company, a standarized set of processes 
+accross every team will allow every project to be treated the same way,
+delivering the same quality and facilitating coordination among teams.
 
-Use and keep your communication paths up-to-date with your team and
-client. Especially, constantly update your Trello lists. Once you start
-working on a new card, move it to *Doing*. Once you complete it, move
-it to *Done*. As soon as it is available for testing on the staging
-server, move it to *In Testing*.
+Developers tends to be assigned to different projects from time to time, 
+the presence of these defined processes will make this migration smoothly
+as the organizational knowledge of a project should be the same of the 
+ther project. This set of processes is what we call the *methodology*.
 
-Follow work that is being done by your teammates closely. It is often
-useful to read commit messages and check commit changes. Make sure you
-are on top of the feedback your client is giving you through all the
-channels you have established. If a task is rejected, handle the
-feedback promptly. If a new bug is found, handle the feedback or
-create a new card and put it on the *Backlog*.
 
-**Keep communication up-to-date.**
+This section is intented to give a detailed description of our methodology,
+which entails every aspect of the way we work in talPor. We will describe 
+how we carry out our internals and clients meetings, how is our
+setup for our agile development process, including the tools and processes 
+we use to guarantee the correct appliance of our methodology, as well as 
+the tools we use to gather internal feedback about the projects statuses.
+

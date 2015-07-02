@@ -69,10 +69,10 @@ section for further detail of what needs to be done during a project's life cycl
 
 ### Technical standards
 
-We're a tech company that builds products and in order to deliver a great product
+We are a tech company that builds products and in order to deliver a great product
 we need to be writing great code and using the best tools and software for the
 job. Also, in order to share our experience as a team, we need to be on the same
-page as to what software we're using as well as how we're using it. To accomplish
+page as to what software we are using as well as how we're using it. To accomplish
 both those things we have a set of standards and recommendations that are documented
 in the [Technical Standards](tech/) section.
 
