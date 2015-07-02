@@ -6,83 +6,86 @@ projects.
 
 ### Naming of Cards (US, Tasks)
 
-The name of the card should contain a user story that somebody will
-have to do. This should be obtained from the requirements that the
-client needs.
+The name of the card should contain a user story that somebody will,
+eventually, have to do. This should be obtained from the requirements
+that the client has specified previously.
 
 The name of the card should be short but it needs to explain what is
-needed to be done, if there is some extra information that is needed
+needed to be done. If there is some extra information that is needed
 to fully understand the task it should be written in the description
-of the card. The same way if there is document that is related to the
-task it should be attached to the card so the person responsible of
-making the task can easy access to it.
+of the card. In the same spirit, if there exists a document that is
+related to the task, it should be attached to the card so the person
+responsible of working on the task can easily access it.
 
-In order to have some traceability between the user story and the
-actual tasks that needed to be done to complete the user story those
-tasks whould be written inside the user story using a checklist. when
-a task is completed it should be marked as done and trello will show
-the percetage of the user story completed.
+In order to track the work being done on a user story, checklists
+should be used inside the card to keep track of the actual tasks that
+need to be done. When a particular task is done, it should be marked
+in the task checklist, so Trello can display the percentage of
+completion for the whole card.
 
-Due to the fact that is impossible to split a card between weeks and
-is not sane to have a card in doing more than one week is necessary to
-update the "actual effort made" in the user story using the "trello
-plugin for that", in this way the difference between the "story
-points" and the "actual effort made" is the number of story points
-that will be used during the next week to complete the user story.
+Ideally, work on a card shouldn't be split over the span of multiple
+weeks. As such, the "actual effort" that has been poured into a user
+story should be tracked in the task. More information about this below
+on the **Doing** list. The general motivation for this is calculating
+the differential between what we have previously estimated and the
+actual effort that we do. At the end of the week, this differential is
+the number of story points that get carried over the next week, in
+the case of a card that wasn't completed.
 
-Those tasks that are not part of a user story, like sys admin stuff,
-can be written in a card and we suggest to use a label so it can be
-easy to identify which cards are not a user story. The color suggested
-to identify this kind of cards is blue.
+Those tasks that are not part of a user story, like sysadmin stuff,
+should also be tracked using a card. We suggest using a label so they
+can be easily identified. The color suggested to identify this kind of
+cards is blue.
 
 ### Use of Trello in Weekly Meetings
 
 Trello is the main way in which we can communicate with the client
-about what we are currently doing, what we did and what we are going
-to do in the future. This means that that we need to keep it up to
-date and inform the client that he can keep an eye on the project at
-any moment just by looking at the cards on Trello.
+what we are currently doing, what we did and what we are going to do
+in the future. This means that that we need to keep it up to date and
+inform the client that he can keep an eye on the project at any moment
+just by looking at the cards on Trello.
 
 Before every meeting we need to look at what is in Trello and what is
 the status of every card so we can give a correct information about
 the project to the client. Use trello to write the agenda of the
-meeting, in this way everybody can see what's happened in the previous
-meetings in an easy way. Also write in the agenda those aspects that
-comes out during the meeting as well as those aspects that needs to be
-done that aren't necessary a task.
+meeting, in this way everybody can see what has happened in the
+previous meetings in an easy way. Also write in the agenda those
+aspects that come out during the meeting, as well as those aspects
+that need to be done that aren't necessary a task.
 
 During the meeting you need to inform the client about the status of
-Trello which should also be the status of the project. Let the client
-ask questions about the cards and answer any doubts that come
-up. After the meeting you need to update Trello to reflect what is
-going to be done in the next iteration and estimate the corresponding
-cards.
+Trello, which should also be the current status of the project. Let
+the client ask questions about the cards, and answer any doubts that
+come up. After the meeting you need to update Trello to reflect what
+is going to be done in the next iteration and estimate the
+corresponding cards.
 
 ### Lists and meaning of lists
 
 #### 1. **Backlog:**
 
-Every task that defines the project should be here. If a task is not
-in the backlog (or any other list) it doesn't exist. Any idea, any
-"nice to have" feature, everything that should be included in the
-product at any point in the development should be there so everybody
-can track what the things that are left to complete the project
-are. The bugs that are found in the project should also be created in
-this list and must be marked with a **BUG** label, also we suggest to
-use the label red to identify this cards.
+Every task that regarding the project should be here. **If a task is
+not in the backlog (or any other list) it doesn't exist**. Any idea,
+any "nice to have" feature, everything that should be included in the
+product at any point in the development, should be there, so everybody
+can track what things are left to be completed on the project. The
+eventual bugs that are found in the project should also be created in
+this list and must be marked with a **BUG** label. We additionally
+suggest using the red label to identify bug cards, so they can be
+easily triaged.
 
 #### 2. **ToDo:**
 
-In this list should be the tasks that are going to be done in the
+This list should have the tasks that are going to be worked on the
 current iteration. Those tasks should have been estimated in order to
 be sure that the iteration can be completed on time.
 
 #### 3. **Doing:**
 
-As soon as you begin to work on a task you should move it from "ToDo"
-to "Doing" as this helps the team and the client, know what the
-current status of the iteration is as well what things the team is
-working on.
+As soon as you begin work on a task you should move it from "ToDo" to
+"Doing" as this helps the team and the client to know what the current
+status of the iteration is, as well as what things the team is
+currently working on.
 
 As development on the card advances, you need to tag the title of the
 card by adding the number of story points of effort dedicated to the
@@ -97,31 +100,33 @@ This process is vital and should never be skipped since it provides
 important data about how effectively the team is estimating cards and
 it allows the splitting of cards over the span of several weeks.
 
-#### 4. **Pending Review (optional, to be reviewed by other dev):**
+#### 4. **Pending Review (optional, to be reviewed by another dev):**
 
-The general idea behind this list is to add a step in the quality of
-the software that we are building. There are some things that the
-client can't or don't want to test, this things should be tested by
-someone different of the developer of the task. This is optional, it
-depends if the team is bigger than one developer and if there is time
-planned in the iteration to do this tests.
+The general idea behind this list is to add a step of quality
+assurance of the software that we are building. There are some things
+that the client can't or don't want to test. These things should be
+tested by a different developer from the one responsible for the
+task. This is optional, as it depends of various factors, for example,
+if the team is bigger than one developer and if there is time planned
+in the iteration to do these tests.
 
-#### 5. **To be tested (to be reviewed and approved by client):**
+#### 5. **To be tested (to be reviewed and approved by the client):**
 
-This tests are known as "Acceptance Tests", the client is the only one
-who knows what he really wants so it depends of him if the feature
-that we build satisfies his needs. Sometimes the client doesn't want
-to do the tests in the test server, but is really necessary to make
-him understands that this is the only way that we can be sure that we
-are building the right product.
+These tests are known as "Acceptance Tests". The client is the only
+one who knows what he really wants, so it's up to him to decide if the
+feature that we build satisfies his needs. Sometimes the client
+doesn't want to do the tests in the staging server, but it is really
+important to make him understand that this is the only way that we can
+be sure that we are on track and building the right product.
 
-#### 6. **Approved (Ready for Deploy):**
+#### 6. **Approved (Ready to Deploy):**
 
-The client let the team knows that the card is approved by moving it
-from "To be tested" to "Approved". Only the client can move the cards
-to this list (Unless there is a previous agreement that another person
-can do it). The cards on this list can be deployed into production
-when the client needed to.
+Once the client performs the tests related to a card, he lets the team
+know that the card is approved by moving it from the "To be tested"
+list to the "Approved" list. **Only the client can move the cards to
+this list (unless, of course, there is a previous agreement that
+another person can do it)**. The cards on this list can be deployed
+into production when needed.
 
 - Code is implemented and working.
 
@@ -131,11 +136,11 @@ when the client needed to.
 
 #### 7. **Done:**
 
-Here should be the cards that are approved by the client and that are
-already in the production server. After the client approves the card,
-the person responsible of making the deploy into production should put
-the card in this list as soon as he finish the deploy (The features
-should be
+This lists should have the cards that are approved by the client and
+are already in the production server. After the client approves the
+card, the person responsible of making the production deploy should
+put the card in this list as soon as he finishes the deploy (The
+features should be
 ["*smoke tested*"](https://en.wikipedia.org/wiki/Smoke_testing_(software))
 to be sure that everything is OK).
 
@@ -150,7 +155,7 @@ to be sure that everything is OK).
 In this list every card represents a meeting. Those cards contain the
 information about the points that were discussed in the meeting. The
 name of the card is the date in which the meeting occurs.  Use a
-checklit to show the points to be discussed. Use the description to
+checklist to show the points to be discussed. Use the description to
 annotate any information relevant about the points of the meetings.
 You can attach documents or make comments about the meeting using the
 corresponding feature in Trello.  These cards should be created before
