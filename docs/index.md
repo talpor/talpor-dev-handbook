@@ -1,4 +1,4 @@
-﻿## The talPor Philosophy
+## The talPor Philosophy
 
 ### Introduction
 
@@ -54,7 +54,7 @@ put them to practice.
    what you code or what you design, and you are not the project you
    are on.
 
-5. **Be impeccable with your words** This one refers to the way you 
+5. **Be impeccable with your words** This one refers to the way you
    express yourself. Words are much more than the constructs of phrases that
    comes out of your mounth, they carry emotions, actions, thoughts or attitudes.
    Express yourself with integrity, say what you mean and avoid your *word* to express
