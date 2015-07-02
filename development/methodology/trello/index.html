@@ -242,20 +242,30 @@ cards over the span of several weeks.</p>
 <p>This tests are known as "Acceptance Tests", the client is the only one who knows what he really wants so it depends of him if the feature that we build satisfies his needs. Sometimes the client doesn't want to do the tests in the test server, but is really necessary to make him understands that this is the only way that we can be sure that we are building the right product.</p>
 <h4 id="6-approved-ready-for-deploy">6. <strong>Approved (Ready for Deploy):</strong></h4>
 <p>The client let the team knows that the card is approved by moving it from "To be tested" to "Approved". Only the client can move the cards to this list (Unless there is a previous agreement that another person can do it). The cards on this list can be deployed into production when the client needed to.</p>
-<pre><code>a- Code is implemented and working.
-
-b- Tests are written and passes.
-
-c- Code is live in the development (or staging) server.
-</code></pre>
+<ul>
+<li>
+<p>Code is implemented and working.</p>
+</li>
+<li>
+<p>Tests are written and passes.</p>
+</li>
+<li>
+<p>Code is live in the development (or staging) server.</p>
+</li>
+</ul>
 <h4 id="7-done">7. <strong>Done:</strong></h4>
 <p>Here should be the cards that are approved by the client and that are already in the production server. After the client approves the card, the person responsible of making the deploy into production should put the card in this list as soon as he finish the deploy (The features should be <a href="https://en.wikipedia.org/wiki/Smoke_testing_(software)">"<em>smoke tested</em>"</a> to be sure that everything is OK).</p>
-<pre><code>a- Task was in Approved (ready for deploy).
-
-b- Acceptance test have been carried out by the client.
-
-c- Code is in production environment.
-</code></pre>
+<ul>
+<li>
+<p>Task was in Approved (ready for deploy).</p>
+</li>
+<li>
+<p>Acceptance test have been carried out by the client.</p>
+</li>
+<li>
+<p>Code is in production environment.</p>
+</li>
+</ul>
 <h4 id="8-agenda">8. <strong>Agenda:</strong></h4>
 <p>In this list every card represents a meeting. Those cards contain the information about the points that were discussed in the meeting. The name of the card is the date in which the meeting occurs.
 Use a checklit to show the points to be discussed. Use the description to annotate any information relevant about the points of the meetings.
