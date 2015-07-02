@@ -10,7 +10,7 @@ built, taking into consideration what is known initially. The idea is
 that each team member strengths can be used to successfully take the
 project from zero to production in reasonable time.
 
-At talPor, this process is known as the **discovery**. During a
+t talPor, this process is known as the **discovery**. During a
 discovery, fast paced meetings between the client and the team take
 place with the goal of defining the requirements and defining what
 will be part of the **MVP (Minimum Viable Product)**. These meetings
@@ -72,16 +72,17 @@ client is agreed upon.
 
 Always keep in mind:
 
-- **Prepare before your client meeting and summarize what happens after
-  it.** Take the time to do a short *pre-meeting* with your teammates to
-  have a common understanding and goals in the meeting, and a short
-  *post-meeting* once the meeting is over.
+- **Prepare before your client meeting and summarize what happens
+  after it.** Take the time to do a short *pre-meeting* with your
+  teammates to have a common understanding and goals in the meeting,
+  and a short *post-meeting* once the meeting is over.
 
-- **Try to validate your team hypothesis.** For example, try to propose
-  stuff that is known to work instead of reinventing the wheel.
+- **Try to validate your team hypothesis.** For example, try to
+  propose stuff that is known to work instead of reinventing the
+  wheel.
 
-- **Use what is available to you.** If this is not a new project, ask to
-  see Google Analytics data, or any data that the project has
+- **Use what is available to you.** If this is not a new project, ask
+  to see Google Analytics data, or any data that the project has
   available. Make better hypothesis using this.
 
 - **Assume as little as possible.** If you can't validate, it's just a
@@ -123,9 +124,9 @@ Always keep in mind:
 
 Estimations are one of the deliverables of the discovery process. At
 talPor, we use a system of **user stories and story points** to
-estimate the features to be done in a project. A user story is a sentence of
-the form "As a [actor], I want to [action]". For example, one possible
-user story is "As a user, I want to log in".
+estimate the features to be done in a project. A user story is a
+sentence of the form "As a [actor], I want to [action]". For example,
+one possible user story is "As a user, I want to log in".
 
 Every single feature that is proposed during the discovery process
 should be turned into one or several user stories. Consider using
@@ -135,32 +136,34 @@ be estimated using story points.**
 
 At talPor we use a Fibonacci schemed story point system. We can assign
 to every task the following story points: 0, 0.5, 1, 2 (a day worth of
-work), 3, 5, 8, 13, 20+ and ?. Our estimate is that every engineer can perform 10
-story points a week, as such, assigning 8 to a task is saying it is
-expected to take less than a week, and 13 more than one week.
+work), 3, 5, 8, 13, 20+ and ?. Our estimate is that every engineer can
+perform 10 story points a week, as such, assigning 8 to a task is
+saying it is expected to take less than a week, and 13 more than one
+week.
 
 Assigning story points to a task should be done by the engineering
 team physically at the same place (or via a video conference if not
-possible). Ideally, each team member should have an app, a set of cards or 
-pieces of paper with the possible story point values (0, 0.5, 1, 2, 3, ...) 
-written on them.
+possible). Ideally, each team member should have an app, a set of
+cards or pieces of paper with the possible story point values (0, 0.5,
+1, 2, 3, ...)  written on them.
 
-You should start by agreeing upon a user story that you all
-estimate to be a 2, and another user story that you all estimate to be a 5.
-The need for this is to set a baseline for comparison when estimating the
-remaining cards. Once these have been agreed upon, for each user story
-every team member shows the card with the story points they believe the
-story will take. If every member estimated the same, then the value is
-recorded as the user story estimation. In case there was a disagreement,
-a **consensus needs to be reached** before an estimation can be recorded
-for the user story.
+You should start by agreeing upon a user story that you all estimate
+to be a 2, and another user story that you all estimate to be a 5.
+The need for this is to set a baseline for comparison when estimating
+the remaining cards. Once these have been agreed upon, for each user
+story every team member shows the card with the story points they
+believe the story will take. If every member estimated the same, then
+the value is recorded as the user story estimation. In case there was
+a disagreement, a **consensus needs to be reached** before an
+estimation can be recorded for the user story.
 
 Once every user story is estimated, some calculations should be done
 to figure out the expected standard deviation for the user
 stories. There are internal spreadsheets available to do this. Using
 those calculations, an expected delivery time for all the user stories
-can be estimated. You can find a spreadsheet with the formats and 
-formulas used for *user stories* estimations [here](https://docs.google.com/spreadsheets/d/1g554iY7PNtkny7SXp96G6VEJJrEuNuWEioT5Hu96fHU/edit#gid=0).
+can be estimated. You can find a spreadsheet with the formats and
+formulas used for *user stories* estimations
+[here](https://docs.google.com/spreadsheets/d/1g554iY7PNtkny7SXp96G6VEJJrEuNuWEioT5Hu96fHU/edit#gid=0).
 
 Projects generally have a time frame. If the expected delivery time
 exceeds the project time frame, then further negotiation is needed
@@ -183,5 +186,5 @@ Always keep in mind:
   needing higher story points, consider splitting your user stories
   into smaller more manageable user stories.
 
-- Keep your estimations up-to-date in the project's [Trello](https://trello.com)
-  board.
+- Keep your estimations up-to-date in the project's
+  [Trello](https://trello.com) board.

@@ -20,8 +20,8 @@ is the selected CI workhorse. Besides that, all choices can be changed
 as needed. However, in this document we assume the following:
 
 1. **Docker from development to production**. Every possible
-   environment has a relevant image. Every process is dockerized into a
-   container. We recommend using our **docker registry** to store
+   environment has a relevant image. Every process is dockerized into
+   a container. We recommend using our **docker registry** to store
    images and share them with your peers and between servers.
 
 2. **Fabric** is used to encapsulate steps in the workflow and help
@@ -34,8 +34,8 @@ as needed. However, in this document we assume the following:
 The general idea of a CI workflow is as follows:
 
 
-`git push origin master -> Begin CI Pipeline -> If everything is OK (i.e. all tests pass) ->
-Push new build`
+`git push origin master -> Begin CI Pipeline -> If everything is OK
+(i.e. all tests pass) -> Push new build`
 
 At talPor, we follow Git Flow. As it is recommended, we have a
 mainline which is what production is currently running, and a
@@ -52,11 +52,13 @@ then pushed. A similar process happens when there is a hotfix that
 needs to be applied.
 
 We have extended Git Flow to follow a better suited CI flow. The
-general idea of CI is that every change that makes it into `development`
-and `production` should be as problem-free as possible. As such, we have
-decided to make the invariant of the `development` branch the following:
+general idea of CI is that every change that makes it into
+`development` and `production` should be as problem-free as
+possible. As such, we have decided to make the invariant of the
+`development` branch the following:
 
-**At any given moment, `development` is a candidate release of the project.**
+**At any given moment, `development` is a candidate release of the
+  project.**
 
 As such, `development` should be ready to be merged into *production*
 and be as problem-free as possible. We define *problem-free* as **all
