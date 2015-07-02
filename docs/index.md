@@ -39,7 +39,6 @@ put them to practice.
    the requirements, and then *build* or *fix* whatever needs to be
    fixed as best as you possibly can.
 
-
 3. **Ask for help.** As previously said, we are a small team which is
    always ready to provide help when needed. Don't be afraid to ask if
    someone has ever done this or that. Don't be afraid to say you
@@ -54,6 +53,18 @@ put them to practice.
    the time that you will be told you are doing it wrong. You are not
    what you code or what you design, and you are not the project you
    are on.
+
+5. **Be impeccable with your words** This one refers to the way you 
+   express yourself. Words are much more than the constructs of phrases that
+   comes out of your mounth, they carry emotions, actions, thoughts or attitudes.
+   Express yourself with integrity, say what you mean and avoid your *word* to express
+   jealousy, envy, frustration, fear or anger. We respect each other ideas and thoughts.
+   
+6. **Don't make assumptions** When you are working on teams, communication is 
+   fundamental to guarantee success in any project. You cannot assume what
+   others think, so being a little verbose is not that bad. Misunderstandings
+   occurs and you may end up not deploying something into production 
+   because you assumed that another one was going to do it. 
 
 ### Who is this for?
 
