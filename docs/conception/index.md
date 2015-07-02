@@ -3,7 +3,7 @@
 The conception phase begins at the moment a new project walks through
 the door. The main focus in this stage is understanding the
 requirements of the project, and the results of this whole process is
-a set of mockups and estimations that fulfills the requirements.
+a set of mockups and estimations that fulfills those requirements.
 
 During this stage, the team that will be involved in a project is
 built, taking into consideration what is known initially. The idea is
@@ -26,8 +26,7 @@ solve it.
 Also remember, at the end of the day, we are also developing the
 client idea. We are interested in the client to be successful, so we
 want to be able, at the end of the development process and into the
-production stage, to be able to (in)validate the path that has been
-chosen.
+production stage, to (in)validate the path that has been chosen.
 
 Always keep in mind:
 
@@ -88,7 +87,7 @@ Always keep in mind:
 - **Assume as little as possible.** If you can't validate, it's just a
   hunch.
 
-- Sometimes, the client don't want to let go of a feature they deem
+- Sometimes, the client doesn't want to let go of a feature they deem
   really important. Try to compromise, try to explain why is it not
   possible. Explain that if that feature makes it into the final
   vision for the MVP, other features will have to be dropped for now.
@@ -142,8 +141,9 @@ expected to take less than a week, and 13 more than one week.
 
 Assigning story points to a task should be done by the engineering
 team physically at the same place (or via a video conference if not
-possible). Ideally, each team member should have a set of cards or pieces
-of paper with the possible story point values (0.5, 1, 2, 3, ...) written on them.
+possible). Ideally, each team member should have a set of cards or 
+pieces of paper with the possible story point values (0.5, 1, 2, 3, ...) 
+written on them.
 
 You should start by agreeing upon a user story that you all
 estimate to be a 2, and another user story that you all estimate to be a 5.
