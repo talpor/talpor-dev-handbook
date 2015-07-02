@@ -136,7 +136,7 @@ into production when needed.
 
 #### 7. **Done:**
 
-This lists should have the cards that are approved by the client and
+This list should have the cards that are approved by the client and
 are already in the production server. After the client approves the
 card, the person responsible of making the production deploy should
 put the card in this list as soon as he finishes the deploy (The
