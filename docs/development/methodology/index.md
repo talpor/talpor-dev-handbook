@@ -1,18 +1,18 @@
-##Introduction
+## Introduction
 
-When you are working in a software development team you need a set of
+When you are working in a software development team, you need a set of
 well-defined processes to empower organization, communication and
 efficient work. Moreover, inside a company, a standarized set of
-processes accross every team will allow every project to be treated
-the same way, delivering the same quality and facilitating
-coordination among teams.
+processes across every team will allow every project to be treated the
+same way, delivering the same quality and facilitating coordination
+among teams.
 
-Developers tends to be assigned to different projects from time to
-time, the presence of these defined processes will make this migration
-smoothly as the organizational knowledge of a project should be the
-same of the ther project. This set of processes is what we call the
+Developers tend to be (re-)assigned to different projects from time to
+time. The presence of these well-defined processes will make this
+migration smooth as the organizational knowledge of a project should
+carry over from project to project (i.e. should be the same for any
+other project). This set of processes is what we call the
 *methodology*.
-
 
 This section is intented to give a detailed description of our
 methodology, which entails every aspect of the way we work in
