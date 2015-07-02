@@ -19,9 +19,9 @@ responsible of working on the task can easily access it.
 
 In order to track the work being done on a user story, checklists
 should be used inside the card to keep track of the actual tasks that
-need to be done. When a particular task is done, it should be marked
-in the task checklist, so Trello can display the percentage of
-completion for the whole card.
+need to be done. When a particular task is completed, it should be
+marked as such in the task checklist, so Trello can display the
+percentage of completion for the whole card.
 
 Ideally, work on a card shouldn't be split over the span of multiple
 weeks. As such, the "actual effort" that has been poured into a user
@@ -104,7 +104,7 @@ it allows the splitting of cards over the span of several weeks.
 
 The general idea behind this list is to add a step of quality
 assurance of the software that we are building. There are some things
-that the client can't or don't want to test. These things should be
+that the client can't or doesn't want to test. These things should be
 tested by a different developer from the one responsible for the
 task. This is optional, as it depends of various factors, for example,
 if the team is bigger than one developer and if there is time planned
