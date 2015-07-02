@@ -1,13 +1,19 @@
-Trello
+﻿Trello
 -----------
 
 This section will define how we should be using Trello in our projects.
 
 ###Naming of Cards (US, Tasks)
 
-The name of the card should contain a user story that somebody will have to do. This task can be obtained from the user stories or by a requirement that the client needs.
+The name of the card should contain a user story that somebody will have to do. This should be obtained from the requirements that the client needs.
 
 The name of the card should be short but it needs to explain what is needed to be done, if there is some extra information that is needed to fully understand the task it should be written in the description of the card. The same way if there is document that is related to the task it should be attached to the card so the person responsible of making the task can easy access to it.
+
+In order to have some traceability between the user story and the actual tasks that needed to be done to complete the user story those tasks whould be written inside the user story using a checklist. when a task is completed it should be marked as done and trello will show the percetage of the user story completed.
+
+Due to the fact that is impossible to split a card between weeks and is not sane to have a card in doing more than one week is necessary to update the "actual effort made" in the user story using the "trello plugin for that", in this way the difference between the "story points" and the "actual effort made" is the number of story points that will be used during the next week to complete the user story.
+
+Those tasks that are not part of a user story, like sys admin stuff, can be written in a card and we suggest to use a label so it can be easy to identify which cards are not a user story. The color suggested to identify this kind of cards is blue.
 
 ###Use of Trello in Weekly Meetings
 
@@ -20,7 +26,7 @@ During the meeting you need to inform the client about the status of Trello whic
 ###Lists and meaning of lists
 
 #### 1. **Backlog:**
-Every task that defines the project should be here. If a task is not in the backlog (or any other list) it doesn't exist. Any idea, any "nice to have" feature, everything that should be included in the product at any point in the development should be there so everybody can track what the things that are left to complete the project are. The bugs that are found in the project should also be created in this list and must be marked with a **BUG** label.
+Every task that defines the project should be here. If a task is not in the backlog (or any other list) it doesn't exist. Any idea, any "nice to have" feature, everything that should be included in the product at any point in the development should be there so everybody can track what the things that are left to complete the project are. The bugs that are found in the project should also be created in this list and must be marked with a **BUG** label, also we suggest to use the label red to identify this cards.
 
 #### 2. **ToDo:**
 In this list should be the tasks that are going to be done in the current iteration. Those tasks should have been estimated in order to be sure that the iteration can be completed on time.
