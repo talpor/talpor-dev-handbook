@@ -72,7 +72,7 @@ answer the following questions
 
   - What was last week's progress?
   - Did we fulfill the expectations the team had? If we didn't,
-  explain why and how does that affects our schedule.
+    explain why and how does that affects our schedule.
   - How are we in regards to our schedule?
   - Are we meeting any particular deadline established with the
     client?
