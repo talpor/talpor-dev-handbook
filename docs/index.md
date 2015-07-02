@@ -1,12 +1,12 @@
-## The talPor Philosophy
+﻿## The talPor Philosophy
 
 ### Introduction
 
 Whether you are onboarding on a new project, or just hotfixing a
 problem in an old one, software development is **hard**.
 
-Building software is not only technically hard, but is, like any other
-problem, highly depend on the human factor. Successfully shaping and
+Building software is not only technically hard, but like any other
+problem, it depends highly on the human factor. Successfully shaping and
 taking ideas from just a thought all the way into a successful product
 involves tons of work. From the starting point, many variables, like
 your client, developers, designers, among others, must be aligned
@@ -19,10 +19,9 @@ be sound advice in making software development successful.
 
 ### The Guiding Principles
 
-At [talPor](https://talpor.com), we are a multi-disciplinary, multi-location team.
+At [talPor](https://talpor.com), we function as a multi-disciplinary, distributed team.
 We tend to work on small teams (generally, by project) which support and
-collaborate with each other. These guiding principles, which are
-enumerated below, are the core of our philosophy. Embrace them, and
+collaborate with each other. These guiding principles, enumerated below, are the core of our philosophy. Embrace them, and
 put them to practice.
 
 1. **Do not be afraid to make mistakes.** Mistakes happen. You will
@@ -34,7 +33,7 @@ put them to practice.
 
 2. **Always try to do your best.** Even if you have done it a million
    times, or if it is the first time you get on board on a project,
-   always make solid decisions. Doesn't really matter if you have been
+   always make solid decisions. It doesn't really matter if you have been
    in the project from the get go, or you are just joining to hotfix
    that annoying problem, take that extra time to first *understand*
    the requirements, and then *build* or *fix* whatever needs to be
