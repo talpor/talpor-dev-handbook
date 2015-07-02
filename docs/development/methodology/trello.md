@@ -51,20 +51,20 @@ This tests are known as "Acceptance Tests", the client is the only one who knows
 #### 6. **Approved (Ready for Deploy):**
 The client let the team knows that the card is approved by moving it from "To be tested" to "Approved". Only the client can move the cards to this list (Unless there is a previous agreement that another person can do it). The cards on this list can be deployed into production when the client needed to.
 
-    a- Code is implemented and working.
+- Code is implemented and working.
 
-    b- Tests are written and passes.
+- Tests are written and passes.
 
-    c- Code is live in the development (or staging) server.
+- Code is live in the development (or staging) server.
 
 #### 7. **Done:**
 Here should be the cards that are approved by the client and that are already in the production server. After the client approves the card, the person responsible of making the deploy into production should put the card in this list as soon as he finish the deploy (The features should be ["*smoke tested*"](https://en.wikipedia.org/wiki/Smoke_testing_(software)) to be sure that everything is OK).
 
-    a- Task was in Approved (ready for deploy).
+- Task was in Approved (ready for deploy).
 
-    b- Acceptance test have been carried out by the client.
+- Acceptance test have been carried out by the client.
 
-    c- Code is in production environment.
+- Code is in production environment.
 
 #### 8. **Agenda:**
 In this list every card represents a meeting. Those cards contain the information about the points that were discussed in the meeting. The name of the card is the date in which the meeting occurs.

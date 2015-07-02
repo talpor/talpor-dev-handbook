@@ -58,10 +58,6 @@ ask about that either. Many of our tools, for example our CI pipeline,
 is built around the assumption that you are using Docker, so it might
 be a good idea to use Docker from the get go.
 
-### Continuous Integration
-
-Read on [Continuous Integration at talPor](https://gist.github.com/scast/a47facfe43744a75e7b7).
-
 ### Errors and Logging
 
 As a general rule of thumb, log everything. Log errors and
