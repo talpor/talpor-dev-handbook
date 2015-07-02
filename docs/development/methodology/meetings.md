@@ -1,9 +1,10 @@
 ## Meetings
 
-Meetings are very important in the development process, they ensure
-that everybody is on the same page and we can received feedback from
-our clients. But at the same time meetings can become a painful
-process were the team feels that it's losing valuable time.
+Meetings are very important in the development process as they ensure
+that everybody is on the same page and is one of the primary ways to
+give and receive feedback to and from our clients. But, at the same
+time, meetings can become a painful process were the team feels that
+it's losing valuable time.
 
 ### Meeting tips
 
