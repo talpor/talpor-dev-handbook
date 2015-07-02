@@ -67,9 +67,10 @@ Here should be the cards that are approved by the client and that are already in
     c- Code is in production environment.
 
 #### 8. **Agenda:**
-In this list every card represents a meeting, in those cards is the information about the points that were discussed in the meeting. The name of the card is the date in which the meeting occurs.
-Use a *todo list* to show the points to be discussed. Use the description to annotate any information relevant about the points of the meetings.
+In this list every card represents a meeting. Those cards contain the information about the points that were discussed in the meeting. The name of the card is the date in which the meeting occurs.
+Use a checklit to show the points to be discussed. Use the description to annotate any information relevant about the points of the meetings.
 You can attach documents or make comments about the meeting using the corresponding feature in Trello.
+These cards should be created before the meeting with the client, preferably during the team's pre-meeting.
 
 ### Tips
 Remember that a tool is only useful if everyone uses it. Due to the fact that we are not in the same place we strongly depend on these kind of tools to be able to do our job in the best possible way. Do not hesitate to bring in new insights about how we can improve the way we use Trello or if there is another tool that can replace this and make our life easier.

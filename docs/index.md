@@ -1,8 +1,6 @@
-The talPor Philosophy
-====================
+## The talPor Philosophy
 
-Introduction
-------------
+### Introduction
 
 Whether you are onboarding on a new project, or just hotfixing a
 problem in an old one, software development is **hard**.
@@ -19,11 +17,10 @@ practices at all the stages related to software development. As
 anything, it isn't written in stone, but rather is what we believe to
 be sound advice in making software development successful.
 
-The Guiding Principles
------------------------
+### The Guiding Principles
 
-At [talPor], we are a multi-disciplinary, multi-location team. We tend
-to work on small teams (generally, by project) which support and
+At [talPor](https://talpor.com), we are a multi-disciplinary, multi-location team.
+We tend to work on small teams (generally, by project) which support and
 collaborate with each other. These guiding principles, which are
 enumerated below, are the core of our philosophy. Embrace them, and
 put them to practice.
@@ -59,8 +56,7 @@ put them to practice.
    what you code or what you design, and you are not the project you
    are on.
 
-Who is this for?
-----------------
+### Who is this for?
 
 This document is primarily geared towards any talPor employees. It is
 intended to contain glimpses of what we believe to be solid software
@@ -71,22 +67,21 @@ As such, anyone that partakes in any of the phases of software
 development, can benefit from reading and practicing what is on this
 document.
 
-How is this document structured?
----------------------------------
+### How is this document structured?
 
 The rest of this document is structured trying to follow the common
 software development flow.
 
-1. **Conception** happens from the minute a new client walks in, or a
-   new internal project is started. Meeting the client, understanding
+1. [**Conception**](conception/index.md) happens from the minute a new client
+   walks in, or a new internal project is started. Meeting the client, understanding
    requirements, forming teams, estimating features all happens at
    this stage.
 
-2. **Development** is when the first version of the product is built.
-   Smart technology decisions, good practices, and impeccable communication
+2. [**Development**](development/index.md) is when the first version of the product
+   is built. Smart technology decisions, good practices, and impeccable communication
    are key at this stage. This section is also were we go into detail about
    the methodology we use during projects as well as best practices for development.
 
-3. **Deployment** of the project into production. Dealing with
+3. [**Deployment**](deployment/index.md) of the project into production. Dealing with
    showstopper bugs, the 90/10 rule, handling staging and production
    servers, dealing with bugs on production, continuous integration.

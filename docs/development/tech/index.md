@@ -44,7 +44,7 @@ upon** by the team members.
 The following subsections list some of the common choices we have made
 at talPor, and some of the things to look out for.
 
-#### Web apps
+#### **Web apps**
 
 We are primarily a [Python](https://www.python.org/) shop. We generally use
 [Django](https://www.djangoproject.com/) for our projects, although we have
@@ -72,7 +72,7 @@ Always keep in mind:
 
 - **Be pragmatic.** Choose the right tool for the job.
 
-#### Mobile apps
+#### **Mobile apps**
 
 Make the pragmatic choice. While the experience is always better on
 native applications over hybrid applications, sometimes the choice has
@@ -93,7 +93,7 @@ Always keep in mind:
   experience, it's all different. Keep this in mind when you decide to
   go hybrid route.
 
-#### Databases
+#### **Databases**
 
 We are strongly biased towards using
 [Postgres](http://www.postgresql.org/) for every new project. There
@@ -103,7 +103,7 @@ little too immature for production.
 However, we love and use [Redis](http://redis.io/) as a K-V store,
 generally for caching and the backend for job queues.
 
-#### Tooling
+#### **Tooling**
 
 Choose tools that help you during all the project stages. Your tools
 should help you while you are developing by providing a good
@@ -117,7 +117,7 @@ common system tools we already have available. We also enjoy using
 reproducibility. Other great tools are [Grunt](http://gruntjs.com/)
 and [Gulp](http://gulpjs.com/).
 
-#### Services
+#### **Services**
 
 There are several services that solve many common problems. Don't be
 afraid to use them if they save considerable amount of development

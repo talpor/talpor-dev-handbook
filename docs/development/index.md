@@ -1,5 +1,4 @@
-Project development phase
----------------------------------
+## The Development Phase
 
 The development phase begins immediately after conception, together
 with design it makes up the core of the software development

@@ -1,4 +1,4 @@
-# The process
+## The process
 
 At the end of a project cycle or when somebody gets out of the project, we run a *Post-Mortem* or *Lessons learned* process. 
 
@@ -14,12 +14,12 @@ There are two different scenarios where the *Post-Mortems* are applied:
 
   1. A team member gets out of the project.
   -  The project cycle ends or the project is finished.
-  
+
 For each scenario there is a different course of action. If a **member leaves the team** his post-mortem report will be evaluated in the following *Retrospective meeting*. In this case, the retrospective meeting will consists on the post-mortem evaluation as first task, from which the outcomes will be used as input for the current retrospective where the ex-member is not bounded to participate.
 
 In the case where the **project cycle ends or the project is finished** we organize a *Post-Mortem meeting* as described before.
 
-## Post-mortem report
+### Post-mortem report
 
 The purpose of the Project Post-Mortem Report is to record, in detail, the specific project activities that were most effective and those that require adjustments for future projects. The objective of this report is to inform future projsect teams of important lessons learned during the project (i.e. obstacles, challenges, successes, what could be done differently next time, etc.). 
 
@@ -27,7 +27,7 @@ In talPor we have a custom post-mortem report template that is used to gather th
 
 <TODO: incluir el template acá?>
 
-## Post-mortem meeting 
+### Post-mortem meeting 
 
 <TODO: To be defined>
 
