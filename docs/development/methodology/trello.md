@@ -1,4 +1,4 @@
-﻿Trello
+Trello
 -----------
 
 This section will define how we should be using Trello in our projects.
@@ -13,7 +13,7 @@ The name of the card should be short but it needs to explain what is needed to b
 
 Trello is the main way in which we can communicate with the client about what we are currently doing, what we did and what we are going to do in the future. This means that that we need to keep it up to date and inform the client that he can keep an eye on the project at any moment just by looking at the cards on Trello.
 
-Before every meeting we need to look at what is in Trello and what is the status of every card so we can give a correct information about the project to the client. Use trello to write the agenda of the meeting, in this way everybody can see what have happen in the previous meetings in an easy way. Also write in the agenda thing that come out in the meeting as thing that need to be done that aren't necessary a task.
+Before every meeting we need to look at what is in Trello and what is the status of every card so we can give a correct information about the project to the client. Use trello to write the agenda of the meeting, in this way everybody can see what's happened in the previous meetings in an easy way. Also write in the agenda those aspects that comes out during the meeting as well as those aspects that needs to be done that aren't necessary a task.
 
 During the meeting you need to inform the client about the status of Trello which should also be the status of the project. Let the client ask questions about the cards and answer any doubts that come up. After the meeting you need to update Trello to reflect what is going to be done in the next iteration and estimate the corresponding cards.
 

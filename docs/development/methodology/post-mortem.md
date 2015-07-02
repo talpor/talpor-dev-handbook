@@ -21,15 +21,24 @@ In the case where the **project cycle ends or the project is finished** we organ
 
 ### Post-mortem report
 
-The purpose of the Project Post-Mortem Report is to record, in detail, the specific project activities that were most effective and those that require adjustments for future projects. The objective of this report is to inform future projsect teams of important lessons learned during the project (i.e. obstacles, challenges, successes, what could be done differently next time, etc.). 
+The purpose of the Project's Post-Mortem Report is to record, in detail, the specific project activities that were most effective and those that require adjustments for future projects. It could be seen as an overall reflection of what's been going on with the project. The objective of this report is to inform the development teams about those important lessons learned during the development of the project (i.e. obstacles, challenges, successes, what could be done differently next time, etc.), in a way that we can avoid making the same mistakes and learn from them.
 
-In talPor we have a custom post-mortem report template that is used to gather this information. This template is sent as a google questionnaire and its answers are stored in a google spreadsheet. 
-
-<TODO: incluir el template acá?>
+In talPor we have a custom post-mortem report template that is used to gather this information. This template is sent as a google questionnaire and its answers are stored in a google spreadsheet. You can make a copy of this [questionnaire](https://docs.google.com/a/talpor.com/forms/d/1TLO9iZJszQ_tteUVIzovL1BDCWnmdAWe3mwgfiKqhWQ/edit) for your project in order to carry out your own post-mortem process.
 
 ### Post-mortem meeting 
 
-<TODO: To be defined>
+After all the post-mortem reports have been filled in, it's time to discuss and draw some team conclusions about the project. Once everyone have written the *post-mortem report* we are on the same page to discuss and derive some lessons learned about the process of the project. 
+
+The meeting has to be scheduled as soon as all the post-mortem reports have been filled and handed in. According to the following cases the meeting will have different formats:
+
+ - **One member leaves the team**: In this case, the post-mortem report of the one who left will be discussed during the next *retrospective* meeting of the project. At the beginning of the retrospective meeting, the post-mortem report of this member is discussed and the conclusions of that discussion will feed the retrospective meeting that will be carried out. It's not necessary that this member participates in the entire retrospective meeting as he doesn't belong to the team anymore.
+   
+ - **The project finishes or closes**: A post-mortem meeting is set up in this case and no more retrospective meetings are carried out. In this meeting the results of each post-mortem report are discussed and some conclusions and lessons learned are drawn. 
+   
+
+
+
+
 
 
 
