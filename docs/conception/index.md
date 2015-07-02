@@ -10,7 +10,7 @@ built, taking into consideration what is known initially. The idea is
 that each team member strengths can be used to successfully take the
 project from zero to production in reasonable time.
 
-t talPor, this process is known as the **discovery**. During a
+At talPor, this process is known as the **discovery**. During a
 discovery, fast paced meetings between the client and the team take
 place with the goal of defining the requirements and defining what
 will be part of the **MVP (Minimum Viable Product)**. These meetings
