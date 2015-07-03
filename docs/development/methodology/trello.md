@@ -41,7 +41,7 @@ cards is blue.
 
 Trello is the main way in which we can communicate with the client
 what we are currently doing, what we did and what we are going to do
-in the future. This means that that we need to keep it up to date and
+in the future. This means that we need to keep it up to date and
 inform the client that he can keep an eye on the project at any moment
 just by looking at the cards on Trello.
 
