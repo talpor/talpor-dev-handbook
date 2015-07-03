@@ -1,9 +1,10 @@
 ### Goodbye
 
-[talPor](https://talpor.com) strongly believes that you build the company you want
-to work for. As such, we are constantly iterating, testing new hypothesis, and
-validating. This document is always-changing, and we welcome thoughts,
-ideas, and suggestions to improve our process.
+[talPor](https://talpor.com) strongly believes that you build the
+company you want to work for. As such, we are constantly iterating,
+testing new hypothesis, and validating. This document is
+always-changing, and we welcome thoughts, ideas, and suggestions to
+improve our process.
 
 ### References
 

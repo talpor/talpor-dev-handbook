@@ -6,11 +6,11 @@ Whether you are onboarding on a new project, or just hotfixing a
 problem in an old one, software development is **hard**.
 
 Building software is not only technically hard, but like any other
-problem, it depends highly on the human factor. Successfully shaping and
-taking ideas from just a thought all the way into a successful product
-involves tons of work. From the starting point, many variables, like
-your client, developers, designers, among others, must be aligned
-towards the goal of successfully shipping the product.
+problem, it depends highly on the human factor. Successfully shaping
+and taking ideas from just a thought all the way into a successful
+product involves tons of work. From the starting point, many
+variables, like your client, developers, designers, among others, must
+be aligned towards the goal of successfully shipping the product.
 
 This document intends to outline what we believe to be the best
 practices at all the stages related to software development. As
@@ -19,10 +19,11 @@ be sound advice in making software development successful.
 
 ### The Guiding Principles
 
-At [talPor](https://talpor.com), we function as a multi-disciplinary, distributed team.
-We tend to work on small teams (generally, by project) which support and
-collaborate with each other. These guiding principles, enumerated below, are the core of our philosophy. Embrace them, and
-put them to practice.
+At [talPor](https://talpor.com), we function as a multi-disciplinary,
+distributed team.  We tend to work on small teams (generally, by
+project) which support and collaborate with each other. These guiding
+principles, enumerated below, are the core of our philosophy. Embrace
+them, and put them to practice.
 
 1. **Do not be afraid to make mistakes.** Mistakes happen. You will
    over or under-estimate that feature. You will completely
@@ -33,11 +34,11 @@ put them to practice.
 
 2. **Always try to do your best.** Even if you have done it a million
    times, or if it is the first time you get on board on a project,
-   always make solid decisions. It doesn't really matter if you have been
-   in the project from the get go, or you are just joining to hotfix
-   that annoying problem, take that extra time to first *understand*
-   the requirements, and then *build* or *fix* whatever needs to be
-   fixed as best as you possibly can.
+   always make solid decisions. It doesn't really matter if you have
+   been in the project from the get go, or you are just joining to
+   hotfix that annoying problem, take that extra time to first
+   *understand* the requirements, and then *build* or *fix* whatever
+   needs to be fixed as best as you possibly can.
 
 3. **Ask for help.** As previously said, we are a small team which is
    always ready to provide help when needed. Don't be afraid to ask if
@@ -55,16 +56,19 @@ put them to practice.
    are on.
 
 5. **Be impeccable with your words** This one refers to the way you
-   express yourself. Words are much more than the constructs of phrases that
-   comes out of your mounth, they carry emotions, actions, thoughts or attitudes.
-   Express yourself with integrity, say what you mean and avoid your *word* to express
-   jealousy, envy, frustration, fear or anger. We respect each other ideas and thoughts.
+   express yourself. Words are much more than the constructs of
+   phrases that comes out of your mounth, they carry emotions,
+   actions, thoughts or attitudes.  Express yourself with integrity,
+   say what you mean and avoid your *word* to express jealousy, envy,
+   frustration, fear or anger. We respect each other ideas and
+   thoughts.
 
-6. **Don't make assumptions** When you are working on teams, communication is
-   fundamental to guarantee success in any project. You cannot assume what
-   others think, so being a little verbose is not that bad. Misunderstandings
-   occurs and you may end up not deploying something into production
-   because you assumed that another one was going to do it.
+6. **Don't make assumptions** When you are working on teams,
+   communication is fundamental to guarantee success in any
+   project. You cannot assume what others think, so being a little
+   verbose is not that bad. Misunderstandings occurs and you may end
+   up not deploying something into production because you assumed that
+   another one was going to do it.
 
 ### Who is this for?
 
@@ -82,16 +86,18 @@ document.
 The rest of this document is structured trying to follow the common
 software development flow.
 
-1. [**Conception**](conception/index.md) happens from the minute a new client
-   walks in, or a new internal project is started. Meeting the client, understanding
-   requirements, forming teams, estimating features all happens at
-   this stage.
+1. [**Conception**](conception/index.md) happens from the minute a new
+   client walks in, or a new internal project is started. Meeting the
+   client, understanding requirements, forming teams, estimating
+   features all happens at this stage.
 
-2. [**Development**](development/index.md) is when the first version of the product
-   is built. Smart technology decisions, good practices, and impeccable communication
-   are key at this stage. This section is also were we go into detail about
-   the methodology we use during projects as well as best practices for development.
+2. [**Development**](development/index.md) is when the first version
+   of the product is built. Smart technology decisions, good
+   practices, and impeccable communication are key at this stage. This
+   section is also were we go into detail about the methodology we use
+   during projects as well as best practices for development.
 
-3. [**Deployment**](deployment/index.md) of the project into production. Dealing with
-   showstopper bugs, the 90/10 rule, handling staging and production
-   servers, dealing with bugs on production, continuous integration.
+3. [**Deployment**](deployment/index.md) of the project into
+   production. Dealing with showstopper bugs, the 90/10 rule, handling
+   staging and production servers, dealing with bugs on production,
+   continuous integration.

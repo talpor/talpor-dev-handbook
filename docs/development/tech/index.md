@@ -16,7 +16,10 @@ Always keep in mind:
   have many commits that don't quite work up to a feature (which you
   have not yet pushed), you can squash them with a rebase.
 
-- Follow [Git Flow](http://nvie.com/posts/a-successful-git-branching-model). However, we keep master as develop, and production as master. Use feature and hotfix branches.
+- Follow
+  [Git Flow](http://nvie.com/posts/a-successful-git-branching-model). However,
+  we keep master as develop, and production as master. Use feature and
+  hotfix branches.
 
 - Write good commit messages. Use a good headline and, if needed,
   follow it by further details about the commit.
@@ -46,10 +49,11 @@ at talPor, and some of the things to look out for.
 
 #### **Web apps**
 
-We are primarily a [Python](https://www.python.org/) shop. We generally use
-[Django](https://www.djangoproject.com/) for our projects, although we have
-successfully used [Flask](http://flask.pocoo.org/) for smaller projects.
-Additionally, we have dipped our toes in the [Node.js](https://nodejs.org/) and
+We are primarily a [Python](https://www.python.org/) shop. We
+generally use [Django](https://www.djangoproject.com/) for our
+projects, although we have successfully used
+[Flask](http://flask.pocoo.org/) for smaller projects.  Additionally,
+we have dipped our toes in the [Node.js](https://nodejs.org/) and
 [Rails](http://rubyonrails.org/) world with varying levels of success.
 
 We prefer Python and Django on the backend because there are no
@@ -58,9 +62,10 @@ rather a set of conventions to follow.
 
 On the frontend, we use plain Javascript. We generally work on top of
 a framework. We have used [Angular](https://angular.io/),
-[Backbone](http://backbonejs.org/), and [React](http://facebook.github.io/react/)
-in the past. Styling is generally done using a combination of
-[SASS](http://sass-lang.com/) and [Compass](http://compass-style.org/).
+[Backbone](http://backbonejs.org/), and
+[React](http://facebook.github.io/react/) in the past. Styling is
+generally done using a combination of [SASS](http://sass-lang.com/)
+and [Compass](http://compass-style.org/).
 
 Always keep in mind:
 
@@ -267,8 +272,9 @@ immediate priority as soon as the development phase starts.
 
 Always keep in mind:
 
-- **Keeping staging up-to-date aids communication with your client**. Bugs
-  and issues can be found faster, and dealt with on a timely fashion.
+- **Keeping staging up-to-date aids communication with your
+  client**. Bugs and issues can be found faster, and dealt with on a
+  timely fashion.
 
 - **Staging should always pass all tests!** Everything on staging is a
   *candidate* release of your project. Treat this environment seriously:
