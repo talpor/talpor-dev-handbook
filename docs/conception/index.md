@@ -3,14 +3,14 @@
 The conception phase begins at the moment a new project walks through
 the door. The main focus in this stage is understanding the
 requirements of the project, and the results of this whole process is
-a set of mockups and estimations that fulfills those requirements.
+a set of mockups and estimations that fulfill those requirements.
 
 During this stage, the team that will be involved in a project is
 built, taking into consideration what is known initially. The idea is
 that each team member strengths can be used to successfully take the
 project from zero to production in reasonable time.
 
-At talPor, this process is known as the **discovery**. During a
+At talPor, this process is known as **discovery**. During
 discovery, fast paced meetings between the client and the team take
 place with the goal of defining the requirements and defining what
 will be part of the **MVP (Minimum Viable Product)**. These meetings
