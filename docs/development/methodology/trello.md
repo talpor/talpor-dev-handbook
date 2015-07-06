@@ -13,7 +13,7 @@ that the client has specified previously.
 The name of the card should be short but it needs to explain what
 needs to be done. If there is some extra information that is needed
 to fully understand the task it should be written down in the description
-of the card. In the same spirit, If a document exists that is related to 
+of the card. In the same spirit, if a document exists that is related to 
 the task, it should be attached to the card so the person responsible 
 of working on the task can easily access it.
 
