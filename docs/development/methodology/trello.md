@@ -10,10 +10,10 @@ The name of the card should contain a user story that somebody will,
 eventually, have to do. This should be obtained from the requirements
 that the client has specified previously.
 
-The name of the card should be short but it needs to explain what is
-needed to be done. If there is some extra information that is needed
-to fully understand the task it should be written in the description
-of the card. In the same spirit, if there exists a document that is
+The name of the card should be short but it needs to explain what
+needs to be done. If there is some extra information that is needed
+to fully understand the task it should be written down in the description
+of the card. In the same spirit, if exists a document that is
 related to the task, it should be attached to the card so the person
 responsible of working on the task can easily access it.
 
@@ -39,7 +39,7 @@ cards is blue.
 
 ### Use of Trello in Weekly Meetings
 
-Trello is the main way in which we can communicate with the client
+Trello is the main way in which we communicate to the client
 what we are currently doing, what we did and what we are going to do
 in the future. This means that we need to keep it up to date and
 inform the client that he can keep an eye on the project at any moment
@@ -47,7 +47,7 @@ just by looking at the cards on Trello.
 
 Before every meeting we need to look at what is in Trello and what is
 the status of every card so we can give a correct information about
-the project to the client. Use trello to write the agenda of the
+the project to the client. Use Trello to write the agenda of the
 meeting, in this way everybody can see what has happened in the
 previous meetings in an easy way. Also write in the agenda those
 aspects that come out during the meeting, as well as those aspects
@@ -78,11 +78,11 @@ easily triaged.
 
 This list should have the tasks that are going to be worked on the
 current iteration. Those tasks should have been estimated in order to
-be sure that the iteration can be completed on time.
+be certain that the iteration can be completed on time.
 
 #### 3. **Doing:**
 
-As soon as you begin work on a task you should move it from "ToDo" to
+As soon as you begin working on a task you should move it from "ToDo" to
 "Doing" as this helps the team and the client to know what the current
 status of the iteration is, as well as what things the team is
 currently working on.
@@ -105,7 +105,7 @@ it allows the splitting of cards over the span of several weeks.
 The general idea behind this list is to add a step of quality
 assurance of the software that we are building. There are some things
 that the client can't or doesn't want to test. These things should be
-tested by a different developer from the one responsible for the
+tested by a developer different from the one responsible for the
 task. This is optional, as it depends of various factors, for example,
 if the team is bigger than one developer and if there is time planned
 in the iteration to do these tests.
@@ -164,7 +164,7 @@ the meeting with the client, preferably during the team's pre-meeting.
 ### Tips
 
 Remember that a tool is only useful if everyone uses it. Due to the
-fact that we are not in the same place we strongly depend on these
+fact that we are not in the same place, we strongly depend on these
 kind of tools to be able to do our job in the best possible way. Do
 not hesitate to bring in new insights about how we can improve the way
 we use Trello or if there is another tool that can replace this and

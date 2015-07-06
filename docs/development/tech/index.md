@@ -194,7 +194,7 @@ Always keep in mind:
 - It's easier (and faster) to request a code review on small changes
   (less than 100 lines) than on a huge feature (over 1000
   lines). **Push early, and push often**. If you anticipate a big
-  feature which you want to have code reviewed, start requesting code
+  feature whose code you want to have reviewed, start requesting code
   reviews as soon as possible and work on them incrementally.
 
 - **Pre-review your code.** Everybody's time is valuable. Don't
@@ -226,7 +226,7 @@ poorly tested ones.
 
 Always keep in mind:
 
-- Good testing means shiping working code. **Be religious about
+- Good testing means shipping working code. **Be religious about
   testing your codebase.**
 
 - No testing or poor, sloppy testing will result in bad code

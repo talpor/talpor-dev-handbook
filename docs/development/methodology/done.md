@@ -4,7 +4,7 @@ The Definition of done is a concept extracted from the Agile Scrum
 methodology, and it's crucial to a highly functioning agile team. It's
 defined as a set of criteria or checklist that should be met before a
 feature (usually a task or a User Story) is considered **Done**. With
-this in mind, everyone that is involved with the team will heave a
+this in mind, everyone that is involved with the team will have a
 common understanding of "what's done". It should be taken into account
 that a feature should be considered done when it is a "potentially
 shippable" feature or it's ready to be released.

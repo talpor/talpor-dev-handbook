@@ -66,5 +66,5 @@ print statements all over the place.** If you are doing something
 critical, like handling payments, make sure you log the transaction
 once on a log file and once on your database.
 
-We internally use sentry for error logging and notification. Setup a
+We internally use Sentry for error logging and notification. Setup a
 different DSN for each of your servers and respond to errors swiftly.

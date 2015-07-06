@@ -1,7 +1,7 @@
 ## The Conception Phase
 
 The conception phase begins at the moment a new project walks through
-the door. The main focus in this stage is understanding the
+the door. The main focus at this stage is understanding the
 requirements of the project, and the results of this whole process is
 a set of mockups and estimations that fulfill those requirements.
 
@@ -24,7 +24,7 @@ isolate what is the big problem at hand, and provide the tools to
 solve it.
 
 Also remember, at the end of the day, we are also developing the
-client idea. We are interested in the client to be successful, so we
+client's idea. We are interested in the client to be successful, so we
 want to be able, at the end of the development process and into the
 production stage, to (in)validate the path that has been chosen.
 
@@ -78,7 +78,7 @@ Always keep in mind:
   and a short *post-meeting* once the meeting is over.
 
 - **Try to validate your team hypothesis.** For example, try to
-  propose stuff that is known to work instead of reinventing the
+  propose ideas that are known to work instead of reinventing the
   wheel.
 
 - **Use what is available to you.** If this is not a new project, ask
