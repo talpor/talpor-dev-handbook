@@ -13,9 +13,9 @@ that the client has specified previously.
 The name of the card should be short but it needs to explain what
 needs to be done. If there is some extra information that is needed
 to fully understand the task it should be written down in the description
-of the card. In the same spirit, if exists a document that is
-related to the task, it should be attached to the card so the person
-responsible of working on the task can easily access it.
+of the card. In the same spirit, If a document exists that is related to 
+the task, it should be attached to the card so the person responsible 
+of working on the task can easily access it.
 
 In order to track the work being done on a user story, checklists
 should be used inside the card to keep track of the actual tasks that

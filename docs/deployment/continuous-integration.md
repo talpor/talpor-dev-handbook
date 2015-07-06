@@ -128,6 +128,6 @@ below. The first step is triggered when a push with changes on
 ### Notifications & Broken Builds
 
 Notifications happen any time that a build fails. **When a build
-fails, the whole team should focus on making `master` to succesfully
+fails, the whole team should focus on making `master` succesfully
 build again**. Notifications are sent via email to developers and team
 members, and Slack spam happens. **Don't ignore broken builds.**
