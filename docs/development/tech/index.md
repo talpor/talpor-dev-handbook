@@ -226,7 +226,7 @@ poorly tested ones.
 
 Always keep in mind:
 
-- Good testing means shiping working code. **Be religious about
+- Good testing means shipping working code. **Be religious about
   testing your codebase.**
 
 - No testing or poor, sloppy testing will result in bad code
