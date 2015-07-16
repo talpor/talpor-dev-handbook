@@ -13,12 +13,12 @@ Currently, we use the following criteria to specify if a feature is
 done:
 
   1. The code for the featured was produced.
-  2. Tests written and passing.
+  2. Tests written and passed.
   3. The code is commited and pushed to the development repository.
   4. The code is live in the development server.
   5. Acceptance tests have been carried out by the client.
-  6. Code is merged and pushed into Production environment.
-  7. Code is live into production environment.
+  6. The code is merged and pushed into Production environment.
+  7. The code is live into the production environment.
 
 
 
