@@ -174,7 +174,7 @@ or changing their scopes or reach.
 Always keep in mind:
 
 - **Your estimation will probably be wrong.** Humans are exceptionally
-  bad at estimating time, especially under-estimating. Do your best to
+  bad at estimating time, especially under-estimating it. Do your best to
   keep the estimation as honest and real as possible.
 
 - **Account for testing, deployment, bugfixing and other changes.**
