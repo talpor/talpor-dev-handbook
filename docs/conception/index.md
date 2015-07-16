@@ -2,8 +2,8 @@
 
 The conception phase begins at the moment a new project walks through
 the door. The main focus at this stage is understanding the
-requirements of the project, and the results of this whole process is
-a set of mockups and estimations that fulfill those requirements.
+requirements of the project. The end result of this whole process is to ellaborate
+a set of mockups and estimations that will fulfill those requirements.
 
 During this stage, the team that will be involved in a project is
 built, taking into consideration what is known initially. The idea is
@@ -17,10 +17,10 @@ will be part of the **MVP (Minimum Viable Product)**. These meetings
 should be happening as fast as schedule permits.
 
 Generally, clients will want to build every conceivable feature that
-is remotely related to their idea. As such, generally there is a lot
+is remotely related to their idea. As such, there is a lot
 of noise when you try to figure out what is the real problem the
 client is trying to solve. At this stage you want to understand and
-isolate what is the big problem at hand, and provide the tools to
+isolate what the big problem at hand is, and provide the necessary tools to
 solve it.
 
 Also remember, at the end of the day, we are also developing the
