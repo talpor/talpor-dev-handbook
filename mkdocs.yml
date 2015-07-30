@@ -1,6 +1,6 @@
 site_name: talPor Handbook
 theme: mkdocs
-repo_url: https://github.com/talpor/talpor-handbook/
+repo_url: https://github.com/talpor/talpor-dev-handbook/
 site_favicon: images/favicon.ico
 copyright: talPor Solutions 2015
 pages:
