@@ -11,7 +11,7 @@ people prefer to call it a *Retrospective* instead because
 project.
 
 In our case, we will stick to *Post-mortem* or *Lessons learned* since
-we actually run several retrospectives during the project lifespan and
+we actually run several retrospectives during the project's lifespan and
 they have different approaches and goals than the ones being described
 here.
 
@@ -64,7 +64,7 @@ for your project in order to carry out your own post-mortem process.
 
 After all the post-mortem reports have been filled in, it's time to
 discuss and draw some team conclusions about the project. Once
-everyone have written the *post-mortem report* we are on the same page
+everyone has written the *post-mortem report* we are on the same page
 to discuss and derive some lessons learned about the process of the
 project.
 
