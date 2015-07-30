@@ -229,8 +229,8 @@ as needed. However, in this document we assume the following:</p>
 <ol>
 <li>
 <p><strong>Docker from development to production</strong>. Every possible
-   environment has a relevant image. Every process is dockerized into a
-   container. We recommend using our <strong>docker registry</strong> to store
+   environment has a relevant image. Every process is dockerized into
+   a container. We recommend using our <strong>docker registry</strong> to store
    images and share them with your peers and between servers.</p>
 </li>
 <li>
@@ -241,8 +241,8 @@ as needed. However, in this document we assume the following:</p>
 </ol>
 <h3 id="version-controlling-for-good-ci">Version Controlling for Good CI</h3>
 <p>The general idea of a CI workflow is as follows:</p>
-<p><code>git push origin master -&gt; Begin CI Pipeline -&gt; If everything is OK (i.e. all tests pass) -&gt;
-Push new build</code></p>
+<p><code>git push origin master -&gt; Begin CI Pipeline -&gt; If everything is OK
+(i.e. all tests pass) -&gt; Push new build</code></p>
 <p>At talPor, we follow Git Flow. As it is recommended, we have a
 mainline which is what production is currently running, and a
 development line which is where all development happens. Our mainline
@@ -256,10 +256,12 @@ ready to be made to production, <code>development</code> is merged into it and
 then pushed. A similar process happens when there is a hotfix that
 needs to be applied.</p>
 <p>We have extended Git Flow to follow a better suited CI flow. The
-general idea of CI is that every change that makes it into <code>development</code>
-and <code>production</code> should be as problem-free as possible. As such, we have
-decided to make the invariant of the <code>development</code> branch the following:</p>
-<p><strong>At any given moment, <code>development</code> is a candidate release of the project.</strong></p>
+general idea of CI is that every change that makes it into
+<code>development</code> and <code>production</code> should be as problem-free as
+possible. As such, we have decided to make the invariant of the
+<code>development</code> branch the following:</p>
+<p><strong>At any given moment, <code>development</code> is a candidate release of the
+  project.</strong></p>
 <p>As such, <code>development</code> should be ready to be merged into <em>production</em>
 and be as problem-free as possible. We define <em>problem-free</em> as <strong>all
 tests pass</strong>. To avoid human error (merges when some test fails), when
