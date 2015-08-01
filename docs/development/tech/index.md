@@ -179,23 +179,52 @@ Always keep in mind:
 
 Code reviews are what happens when another person looks at code you
 want to commit or have already commited. The main reason to have code
-reviews is aid **code maintainability and catch problems early**. In
-small teams, it ensures that at least two pair of eyes are familiar
-with every bit of the codebase.
+reviews is to aid **code maintainability and catch problems
+early**. In small teams, it ensures that at least two pair of eyes are
+familiar with every bit of the codebase.
 
-At the moment, code reviews happen on a request basis. We follow a
-*pre-commit*, or *pre-push* philosophy. When you want a code review,
-you can either request it to one of your team members, or request it
-to another coworker. Once your code is approved by your reviewers, you
-can proceed to merge your code with `master`.
+At talPor, we are currently following a post-commit methodology for
+code reviews. For active projects, we perform **mandatory** code
+audits of every commit. It is expected for each member of the team to
+be familiar with the code that is being committed by other team
+members, and to participate on regular reviews of the codebase when
+deemed necessary. To promote code quality, an external reviewer, not
+actively working on the project, is assigned to regularly review new
+commits of the project.
+
+We use [Phabricator](http://phabricator.org) for code reviews. In
+Phabricator, post-reviewing a codebase is called auditing. When new
+commits are pushed to a project repository, Phabricator automatically
+assigns its external auditors and begins a code reviewing stage.
+
+Both the author of the commit and auditors can:
+
+- Post general comments on commits, or inline code comments, to
+  discuss the potential problems that the commit might or might not
+  have.
+
+Additionally, auditors must take a decision regarding the commit:
+
+- If the auditor has no issues or concerns with the commit, the commit
+  can be accepted and no further discussion needs to happen.
+
+- The auditor can raise a concern with the commit, in which case the
+  author is notified. Ideally, after a concern is raised with a
+  commit, the author of the commit should make the changes needed to
+  get the commit to an acceptable state.
 
 Always keep in mind:
+
+- Code reviews are a learning activity for all parties
+  involved. Remember the guiding principles in this process, and try
+  to learn as much as possible when giving and receiving reviews.
 
 - It's easier (and faster) to request a code review on small changes
   (less than 100 lines) than on a huge feature (over 1000
   lines). **Push early, and push often**. If you anticipate a big
   feature which you want to have code reviewed, start requesting code
-  reviews as soon as possible and work on them incrementally.
+  reviews as soon as possible and work on them incrementally. This
+  same advice applies to feature branches.
 
 - **Pre-review your code.** Everybody's time is valuable. Don't
   request code reviews on code that doesn't follow code conventions,
@@ -207,6 +236,10 @@ Always keep in mind:
   rewrite of that chunk, or better comment structure). **Don't reject
   code because you would have done it differently**. The main purpose
   of code reviews is to have **maintainable code**.
+
+- As a reviewer, remember to check back on concerns when they are
+  fixed. As a reviewee, remember that concerns should be triaged and
+  handled on a timely fashion.
 
 - If a reviewer and a reviewee can't agree over a point, bring a third
   party (another reviewer) to mediate.
