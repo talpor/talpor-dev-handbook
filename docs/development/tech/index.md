@@ -190,7 +190,9 @@ be familiar with the code that is being committed by other team
 members, and to participate on regular reviews of the codebase when
 deemed necessary. To promote code quality, an external reviewer, not
 actively working on the project, is assigned to regularly review new
-commits of the project.
+commits of the project. The assigned external reviewer allots time
+weekly for sessions of code reviewing. Generally, two hours a week is
+more than enough to stay on top of the latest changes in the codebase.
 
 We use [Phabricator](http://phabricator.org) for code reviews. In
 Phabricator, post-reviewing a codebase is called auditing. When new
