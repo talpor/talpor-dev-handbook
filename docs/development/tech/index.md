@@ -215,6 +215,28 @@ Additionally, auditors must take a decision regarding the commit:
   commit, the author of the commit should make the changes needed to
   get the commit to an acceptable state.
 
+#### The Checklist
+
+|  # | Category         | Item                                                                                                                                             | Tips                                                                                                 |
+|----|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+|  1 | Documentation    | All classes, methods and functions are properly documented with clear langauge and using consistent format                                       | See Item #3                                                                                          |
+|  2 | Documentation    | Complex algorithms are explained and justified                                                                                                   |                                                                                                      |
+|  3 | Documentation    | No needless, obsolete or redundant comments                                                                                                      |                                                                                                      |
+|  4 | Documentation    | Edge cases and code that depends on non-obvious behavior in external libraries are well documented                                               |                                                                                                      |
+|  5 | Documentation    | Incomplete code is indicated with appropiate and consistent distinctive markers (e.g. "TODO" or "FIXME") and explains how it should be completed |                                                                                                      |
+|  6 | Coding Standards | The code is: understandable, adheres to code guidelines, indentation, consistent naming, unit bounds, horizontal and vertical spacing            | Use pep8 and jshit standards. See Style section on this section.                                     |
+|  7 | Coding Standards | Inline styles and scripts are avoided, if possible                                                                                               |                                                                                                      |
+|  8 | Code Design      | Explicit is better than implicit. Simple is better than complex.                                                                                 | `import this`                                                                                        |
+|  9 | Code Design      | DRY, loose coupling and tight cohesion, less code                                                                                                | [Read more](https://docs.djangoproject.com/en/1.8/misc/design-philosophies/)                         |
+| 10 | Code Design      | Relevant domain logic is included in the models, but models are not abused                                                                       | [Read more](http://www.martinfowler.com/eaaCatalog/activeRecord.html --- See next point)             |
+| 11 | Code Design      | Logic and presentation are not mixed                                                                                                             |                                                                                                      |
+| 12 | Error Handling   | All exceptions are properly caught and handled. Error messages are understandable and complete. Ensure no exceptions make it to the final user.  | Thrown exceptions for invalid operations/calculations at model level should be caught at view level. |
+| 13 | Error Handling   | Invalid parameters values are handled properly early in the method and functions execution                                                       |                                                                                                      |
+| 14 | Error Handling   | Logical conditions are checked: array indexes within bounds, correct conditional guards, loops always terminate, division by zero, etc.          |                                                                                                      |
+| 15 | Performance      | No large synchronous tasks that affect users are done if they can be performed asynchronously                                                    |                                                                                                      |
+| 16 | Performance      | SQL should efficient: as few statements are executed as possible                                                                                 |                                                                                                      |
+| 17 | Performance      | Statics are served minified and uglified in production environments                                                                              |                                                                                                      |
+
 Always keep in mind:
 
 - Code reviews are a learning activity for all parties
