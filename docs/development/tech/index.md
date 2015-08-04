@@ -179,23 +179,76 @@ Always keep in mind:
 
 Code reviews are what happens when another person looks at code you
 want to commit or have already commited. The main reason to have code
-reviews is aid **code maintainability and catch problems early**. In
-small teams, it ensures that at least two pair of eyes are familiar
-with every bit of the codebase.
+reviews is to aid **code maintainability and catch problems
+early**. In small teams, it ensures that at least two pair of eyes are
+familiar with every bit of the codebase.
 
-At the moment, code reviews happen on a request basis. We follow a
-*pre-commit*, or *pre-push* philosophy. When you want a code review,
-you can either request it to one of your team members, or request it
-to another coworker. Once your code is approved by your reviewers, you
-can proceed to merge your code with `master`.
+At talPor, we are currently following a post-commit methodology for
+code reviews. For active projects, we perform **mandatory** code
+audits of every commit. It is expected for each member of the team to
+be familiar with the code that is being committed by other team
+members, and to participate on regular reviews of the codebase when
+deemed necessary. To promote code quality, an external reviewer, not
+actively working on the project, is assigned to regularly review new
+commits of the project. The assigned external reviewer allots time
+weekly for sessions of code reviewing. Generally, two hours a week is
+more than enough to stay on top of the latest changes in the codebase.
+
+We use [Phabricator](http://phabricator.org) for code reviews. In
+Phabricator, post-reviewing a codebase is called auditing. When new
+commits are pushed to a project repository, Phabricator automatically
+assigns its external auditors and begins a code reviewing stage.
+
+Both the author of the commit and auditors can:
+
+- Post general comments on commits, or inline code comments, to
+  discuss the potential problems that the commit might or might not
+  have.
+
+Additionally, auditors must take a decision regarding the commit:
+
+- If the auditor has no issues or concerns with the commit, the commit
+  can be accepted and no further discussion needs to happen.
+
+- The auditor can raise a concern with the commit, in which case the
+  author is notified. Ideally, after a concern is raised with a
+  commit, the author of the commit should make the changes needed to
+  get the commit to an acceptable state.
+
+#### The Checklist
+
+|  # | Category         | Item                                                                                                                                             | Tips                                                                                                 |
+|----|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+|  1 | Documentation    | All classes, methods and functions are properly documented with clear langauge and using consistent format                                       | See Item #3                                                                                          |
+|  2 | Documentation    | Complex algorithms are explained and justified                                                                                                   |                                                                                                      |
+|  3 | Documentation    | No needless, obsolete or redundant comments                                                                                                      |                                                                                                      |
+|  4 | Documentation    | Edge cases and code that depends on non-obvious behavior in external libraries are well documented                                               |                                                                                                      |
+|  5 | Documentation    | Incomplete code is indicated with appropiate and consistent distinctive markers (e.g. "TODO" or "FIXME") and explains how it should be completed |                                                                                                      |
+|  6 | Coding Standards | The code is: understandable, adheres to code guidelines, indentation, consistent naming, unit bounds, horizontal and vertical spacing            | Use pep8 and jshint standards. See Style section on this handbook.                                     |
+|  7 | Coding Standards | Inline styles and scripts are avoided, if possible                                                                                               |                                                                                                      |
+|  8 | Code Design      | Explicit is better than implicit. Simple is better than complex.                                                                                 | `import this`                                                                                        |
+|  9 | Code Design      | DRY, loose coupling and tight cohesion, less code                                                                                                | [Read more](https://docs.djangoproject.com/en/1.8/misc/design-philosophies/)                         |
+| 10 | Code Design      | Relevant domain logic is included in the models, but models are not abused                                                                       | [Read more](http://www.martinfowler.com/eaaCatalog/activeRecord.html --- See next point)             |
+| 11 | Code Design      | Logic and presentation are not mixed                                                                                                             |                                                                                                      |
+| 12 | Error Handling   | All exceptions are properly caught and handled. Error messages are understandable and complete. Ensure no exceptions make it to the final user.  | Thrown exceptions for invalid operations/calculations at model level should be caught at view level. |
+| 13 | Error Handling   | Invalid parameters values are handled properly early in the method and functions execution                                                       |                                                                                                      |
+| 14 | Error Handling   | Logical conditions are checked: array indexes within bounds, correct conditional guards, loops always terminate, division by zero, etc.          |                                                                                                      |
+| 15 | Performance      | No large synchronous tasks that affect users are done if they can be performed asynchronously                                                    |                                                                                                      |
+| 16 | Performance      | SQL should efficient: as few statements are executed as possible                                                                                 |                                                                                                      |
+| 17 | Performance      | Statics are served minified and uglified in production environments                                                                              |                                                                                                      |
 
 Always keep in mind:
+
+- Code reviews are a learning activity for all parties
+  involved. Remember the guiding principles in this process, and try
+  to learn as much as possible when giving and receiving reviews.
 
 - It's easier (and faster) to request a code review on small changes
   (less than 100 lines) than on a huge feature (over 1000
   lines). **Push early, and push often**. If you anticipate a big
   feature which you want to have code reviewed, start requesting code
-  reviews as soon as possible and work on them incrementally.
+  reviews as soon as possible and work on them incrementally. This
+  same advice applies to feature branches.
 
 - **Pre-review your code.** Everybody's time is valuable. Don't
   request code reviews on code that doesn't follow code conventions,
@@ -207,6 +260,10 @@ Always keep in mind:
   rewrite of that chunk, or better comment structure). **Don't reject
   code because you would have done it differently**. The main purpose
   of code reviews is to have **maintainable code**.
+
+- As a reviewer, remember to check back on concerns when they are
+  fixed. As a reviewee, remember that concerns should be triaged and
+  handled on a timely fashion.
 
 - If a reviewer and a reviewee can't agree over a point, bring a third
   party (another reviewer) to mediate.
