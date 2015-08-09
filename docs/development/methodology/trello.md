@@ -150,6 +150,9 @@ to be sure that everything is OK).
 
 - Code is in production environment.
 
+Review the [*Definition of Done*](/development/methodology/done/) section
+for further information.
+
 #### 8. **Agenda:**
 
 In this list every card represents a meeting. Those cards contain the
