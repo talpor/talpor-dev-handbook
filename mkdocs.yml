@@ -13,6 +13,7 @@ pages:
     - 'Meetings': 'development/methodology/meetings.md'
     - 'Trello': 'development/methodology/trello.md'
     - 'Definition of Done': 'development/methodology/done.md'
+    - 'Retrospective': 'development/methodology/retrospective.md'
     - 'Post-Mortem': 'development/methodology/post-mortem.md'
   - 'Tech Standards': 'development/tech/index.md'
 - Deployment:
