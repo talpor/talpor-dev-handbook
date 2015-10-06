@@ -10,7 +10,7 @@
         <link rel="shortcut icon" href="../../../../../../images/favicon.ico">
         
 
-	<title>Meetings - talPor Development Handbook</title>
+	<title>Retrospective - talPor Development Handbook</title>
 
         <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -88,8 +88,8 @@
 
         
             
-<li class="active">
-    <a href="./">Meetings</a>
+<li >
+    <a href="../meetings/">Meetings</a>
 </li>
 
         
@@ -106,8 +106,8 @@
 
         
             
-<li >
-    <a href="../retrospective/">Retrospective</a>
+<li class="active">
+    <a href="./">Retrospective</a>
 </li>
 
         
@@ -169,12 +169,12 @@
                 </li>
                 
                     <li >
-                        <a rel="next" href="../">
+                        <a rel="next" href="../done/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../trello/">
+                        <a rel="prev" href="../post-mortem/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -199,109 +199,145 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#meetings">Meetings</a></li>
+        <li class="main active"><a href="#the-process">The Process</a></li>
         
-            <li><a href="#meeting-tips">Meeting tips</a></li>
+    
+        <li class="main "><a href="#the-retrospective-meeting">The Retrospective Meeting</a></li>
         
-            <li><a href="#weekly-meetings">Weekly Meetings</a></li>
+    
+        <li class="main "><a href="#example-of-our-retrospective">Example of our Retrospective</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="meetings">Meetings</h2>
-<p>Meetings are very important in the development process as they ensure
-that everybody is on the same page and is one of the primary ways to
-give and receive feedback to and from our clients. But, at the same
-time, meetings can become a painful process where the team feels that
-it's losing valuable time.</p>
-<h3 id="meeting-tips">Meeting tips</h3>
-<p>Before digging in to the particular process that we use at talPor, it
-would be useful to keep some tips in mind to transform meetings into a
-productive tool and a competitive advantage:</p>
+<h2 id="the-process">The Process</h2>
+<p>During a project's life it's important to evaluate, inspect and adapt 
+the applied methods and teamwork. The <strong>Retrospective</strong> is a process 
+used to gather feedback about a project not just in technical terms 
+but in the team and team issues.</p>
+<blockquote>
+<p><em>Retrospectives</em> enables whole-team learning, act as catalysts for 
+change, and generate action.
+<cite>Agile retrospectives, Esther Derby, Diana Larsen</cite></p>
+</blockquote>
+<p>This process is done through a <em>Retrospective Meeting</em> where the team gathers
+to discuss about the project. This meeting is meant to be carried 
+out periodically, in talPor, we do <strong>monthly</strong> <em>Restrospective Meetings</em> and
+we apply several of the retrospectives techniques described in the book
+<em>Agile retrospectives by Esther Derby, Diana Larsen</em>. </p>
+<p>For the retrospective meetings there's usually one person in charge of 
+leading it, for Scrum this person would be the <em>Scrum Master</em>. However,
+in our case, since we have small teams and we want to evaluate the whole
+team, we include one person from a different team to lead the process. 
+We also do this because the presence of a person that is not familiarized 
+with the project gives us an objective point of view to the meeting which 
+can lead us to discover problems that the members of the team didn't recognize. </p>
+<p>At the end of the retrospective meeting we obtain a set of identified issues
+which we classify as <em>Things to improve</em>, <em>Things to be kept</em> and 
+<em>Things to be removed</em>.</p>
+<h2 id="the-retrospective-meeting">The Retrospective Meeting</h2>
+<p>In this section we'll describe as detail as possible the process we use to 
+carry out the meeting.  As we explained above, we use some of the techniques
+describes in the <em>Agile retrospectives</em> books to carry out the meeting. It's
+important that the person in charge of the meeting prepare a little bit beforehand
+in oder to prevent improvisation during the meeting. Also, it's important to 
+apply different techniques and to vary the activities, the retrospective should 
+not become a boring and repetitive activity, otherwise, you'll end up optaining 
+meaningless outcomes.</p>
+<p>The most important thing is to evaluate the state of the team and the context in
+which it is developing in order to select the correct type of activities to be
+applied during he meeting. This means, you should evaluate if the team needs to
+discover failures, if you want to know what's the root of one or some problems,
+if you have identified that there are problems between some team members, etc.</p>
+<p>The activities to be selected for the retrospective meeting should be inclined 
+towards the context of the team, as explained above. </p>
+<p>The retrospective meeting is usually structured in the following form:</p>
+<ol>
+<li>
+<p><strong>Set the stage:</strong> In this stage the retrospective leader sets the goals and the
+common ground of the meeting. This helps people focus on the work at hand, to
+undestand the goals and how they will spend their time. </p>
+</li>
+<li>
+<p><strong>Gather data:</strong> Not all the participants involved in the retrospective have the
+same point of view, have been present in all the iteration days nor see the same.
+That's why gathering data about what's happened during the iteration is important
+to have a general picture so that everyone are in the same page.</p>
+</li>
+<li>
+<p><strong>Generate insights:</strong> In this phase the team identifies the strengths and issues
+about the iteration. It's the moment to ask <em>Why?</em>, identify causes and effects,
+consider different possibilities and think about them analitically.</p>
+</li>
+<li>
+<p><strong>Decide what to do:</strong> At this point the team should have a list of potential
+experiments and improvements. Sometimes you can come up with a lot of improvements
+and things to do, but it's recommended to select a realistic subset of those - What 
+you consider the most relevant - and work with those for the next iteration.</p>
+</li>
+<li>
+<p><strong>Close the retrospective:</strong> In this phase you decide how to document the retrospective
+and plan a follow-up. It's important for the team to retain the learning outcome from
+the retrospective and apply it successfully.</p>
+</li>
+</ol>
+<h2 id="example-of-our-retrospective">Example of our Retrospective</h2>
+<p>As a base start for a retrospective, we have selected some activities which we'll 
+explain below. These activities were selected for the first retrospective of a 
+started project which had more than 3 months of development, so we wanted to focus 
+on getting and overview of what was going on with it.</p>
+<p>Since we are a highly distributed team not all the team members where in the same 
+place geographicall. For that we used a tool called 
+<a href="https://realtimeboard.com"><em>Real Time Board</em></a> to maintain the real time dynamic 
+of the <em>Retrospective Meeting</em>.</p>
+<p>We selected the following set of activities from the <em>Agile Retrospectives</em> book
+for the meeting:</p>
+<ol>
+<li>
+<p><strong>Set the Stage</strong></p>
 <ul>
-<li>
-<p><strong>Start on time and finish on time</strong>. People appreciate it when you
-  understand that their time is valuable. Another note on time: Do not
-  schedule any meetings to last longer than an hour. Sixty minutes is
-  generally the longest time workers can remain truly engaged.</p>
-</li>
-<li>
-<p><strong>Stick to your schedule</strong>. Create an agenda that lays out
-  everything you plan to cover in the meeting. Once you're in the
-  meeting, put that agenda somewhere accessible for everyone (Trello
-  is a great alternative) and guide the flow of the meeting according
-  to the points that are reflected there. This keeps people focused.</p>
-</li>
-<li>
-<p><strong>Identify who is responsible for leading each topic</strong>. Someone
-  other than the formal meeting leader is often responsible for
-  leading the discussion of a particular agenda item. This person may
-  be providing context for the topic, explaining data, or may have
-  organizational responsibility for that area.  Identifying this
-  person next to the agenda item ensures that anyone who is
-  responsible for leading part of the agenda knows it -- and prepares
-  for it -- before the meeting.</p>
-</li>
-<li>
-<p><strong>Recap decisions and actions just before the meeting ends</strong>. For
-  productive meetings, the end is just as important as the
-  beginning. Don't let people leave the meeting in silent
-  disagreement.</p>
-</li>
-<li>
-<p><strong>Follow up</strong>. It's quite common for people to come away from the
-  same meeting with very different interpretations of what went on. To
-  reduce this risk, use Trello to highlight what was accomplished to
-  all who attended, document the responsibilities given, tasks
-  delegated, and any assigned deadlines.  This way, everyone will be
-  on the same page.</p>
-</li>
+<li><em>Check-in and Working agreement:</em> We started setting the ground rules and 
+remembering our [Guiding principles] (/talpor-dev-handbook/#the-guiding-principles).</li>
 </ul>
-<h3 id="weekly-meetings">Weekly Meetings</h3>
-<p>At talPor we use weekly meetings to keep track of the progress of each
-project.  Ideally these meetings happen every week, at the same day,
-at the same time and are split into three meetings.</p>
-<h4 id="pre-meeting">Pre-meeting</h4>
-<p>This meeting is just for the development team, it usually happens just
-before meeting with the client. The key objective here is to make sure
-that the team is on the same page with the line of communication that
-is going to be delivered to the client.  It's important that everyone
-is clear about what you will and won't say as well as how things will
-be presented. Take time to prepare strategies to confront possible
-problems or difficult situations that could arise during the next
-meeting. Use the shared agenda with the client to make sure that you
-can handle all the points reflected there. After the "Pre-meeting" the
-team has to be able to explain the progress of the week, give feedback
-related to the overall scope of the project and have a proposal of
-what is going to be the focus of the next week.</p>
-<h4 id="client-meeting">Client Meeting</h4>
-<p>At this point the client joins the development team and the idea is to
-answer the following questions</p>
+</li>
+<li>
+<p><strong>Gather data</strong></p>
 <ul>
-<li>What was last week's progress?</li>
-<li>Did we fulfill the expectations the team had? If we didn't,
-    explain why and how does that affects our schedule.</li>
-<li>How are we in regards to our schedule?</li>
-<li>Are we meeting any particular deadline established with the
-    client?</li>
-<li>Is there any change in the scope of the project?</li>
-<li>What is going to be the expectation for the next week?</li>
+<li><em>Timeline with color coding events and dot voting:</em> This was our first 
+retrospective, so we wanted to identify all the relevant events of the 
+project's life and categorize them. Also, we voted if the event was positive 
+or negative for the project.</li>
 </ul>
-<p>This meeting is definitely key in the relationship with the clients,
-but it's important to maintain constant communication with them over
-the week to show any progress, because if we use this meeting to show
-new features the meeting is going to take a long time.</p>
-<p><strong>Slack</strong> is your best tool for constant and effective communication.</p>
-<p>Keep the project's <strong>Trello</strong> board updated and do your best to engage
-the client there to receive as much feedback as possible before the
-meeting.</p>
-<h4 id="post-meeting">Post-meeting</h4>
-<p>This happens immediately after the meeting with the client and is just
-for the development team. The goal is to make sure that everyone knows
-their respective responsibilities. Use this time to update Trello
-according to the feedback received in the previous meeting.</p></div>
+</li>
+<li>
+<p><strong>Generate Insights</strong></p>
+<ul>
+<li><em>Patterns and shift:</em> We discussed the events generated in the timeline and 
+analyzed them trying to find patterns and possible causes. As outcome we obtained 
+a list of actions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Decide what to do</strong></p>
+<ul>
+<li><em>Prioritize with dots:</em> Based on the obtained list, we dot voted the actions to 
+take and classified them as <em>Things to improve</em>, <em>Things to be kept</em> and 
+<em>Things to be removed</em>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Close the retrospective</strong></p>
+<ul>
+<li><em>+/Delta</em>: We analyzed the retrospective process looking for strengths and 
+possible improvements for the next retrospective.</li>
+</ul>
+</li>
+</ol>
+<p>An example of the board we used for this retrospective can be found 
+<a href="https://realtimeboard.com/app/board/90635788/">here</a>. It's important to notice 
+that you'll need permissions to access this board.</p></div>
             
         </div>
 

@@ -107,6 +107,12 @@
         
             
 <li >
+    <a href="../methodology/retrospective/">Retrospective</a>
+</li>
+
+        
+            
+<li >
     <a href="../methodology/post-mortem/">Post-Mortem</a>
 </li>
 
@@ -391,22 +397,171 @@ the point option.</p>
 <h3 id="code-reviews">Code Reviews</h3>
 <p>Code reviews are what happens when another person looks at code you
 want to commit or have already commited. The main reason to have code
-reviews is aid <strong>code maintainability and catch problems early</strong>. In
-small teams, it ensures that at least two pair of eyes are familiar
-with every bit of the codebase.</p>
-<p>At the moment, code reviews happen on a request basis. We follow a
-<em>pre-commit</em>, or <em>pre-push</em> philosophy. When you want a code review,
-you can either request it to one of your team members, or request it
-to another coworker. Once your code is approved by your reviewers, you
-can proceed to merge your code with <code>master</code>.</p>
+reviews is to aid <strong>code maintainability and catch problems
+early</strong>. In small teams, it ensures that at least two pair of eyes are
+familiar with every bit of the codebase.</p>
+<p>At talPor, we are currently following a post-commit methodology for
+code reviews. For active projects, we perform <strong>mandatory</strong> code
+audits of every commit. It is expected for each member of the team to
+be familiar with the code that is being committed by other team
+members, and to participate on regular reviews of the codebase when
+deemed necessary. To promote code quality, an external reviewer, not
+actively working on the project, is assigned to regularly review new
+commits of the project. The assigned external reviewer allots time
+weekly for sessions of code reviewing. Generally, two hours a week is
+more than enough to stay on top of the latest changes in the codebase.</p>
+<p>We use <a href="http://phabricator.org">Phabricator</a> for code reviews. In
+Phabricator, post-reviewing a codebase is called auditing. When new
+commits are pushed to a project repository, Phabricator automatically
+assigns its external auditors and begins a code reviewing stage.</p>
+<p>Both the author of the commit and auditors can:</p>
+<ul>
+<li>Post general comments on commits, or inline code comments, to
+  discuss the potential problems that the commit might or might not
+  have.</li>
+</ul>
+<p>Additionally, auditors must take a decision regarding the commit:</p>
+<ul>
+<li>
+<p>If the auditor has no issues or concerns with the commit, the commit
+  can be accepted and no further discussion needs to happen.</p>
+</li>
+<li>
+<p>The auditor can raise a concern with the commit, in which case the
+  author is notified. Ideally, after a concern is raised with a
+  commit, the author of the commit should make the changes needed to
+  get the commit to an acceptable state.</p>
+</li>
+</ul>
+<h4 id="the-checklist">The Checklist</h4>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Category</th>
+<th>Item</th>
+<th>Tips</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Documentation</td>
+<td>All classes, methods and functions are properly documented with clear langauge and using consistent format</td>
+<td>See Item #3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Documentation</td>
+<td>Complex algorithms are explained and justified</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Documentation</td>
+<td>No needless, obsolete or redundant comments</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Documentation</td>
+<td>Edge cases and code that depends on non-obvious behavior in external libraries are well documented</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Documentation</td>
+<td>Incomplete code is indicated with appropiate and consistent distinctive markers (e.g. "TODO" or "FIXME") and explains how it should be completed</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Coding Standards</td>
+<td>The code is: understandable, adheres to code guidelines, indentation, consistent naming, unit bounds, horizontal and vertical spacing</td>
+<td>Use pep8 and jshint standards. See Style section on this handbook.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Coding Standards</td>
+<td>Inline styles and scripts are avoided, if possible</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Code Design</td>
+<td>Explicit is better than implicit. Simple is better than complex.</td>
+<td><code>import this</code></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Code Design</td>
+<td>DRY, loose coupling and tight cohesion, less code</td>
+<td><a href="https://docs.djangoproject.com/en/1.8/misc/design-philosophies/">Read more</a></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Code Design</td>
+<td>Relevant domain logic is included in the models, but models are not abused</td>
+<td><a href="http://www.martinfowler.com/eaaCatalog/activeRecord.html">Read more</a> --- See next point</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Code Design</td>
+<td>Logic and presentation are not mixed</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Error Handling</td>
+<td>All exceptions are properly caught and handled. Error messages are understandable and complete. Ensure no exceptions make it to the final user.</td>
+<td>Thrown exceptions for invalid operations/calculations at model level should be caught at view level.</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Error Handling</td>
+<td>Invalid parameters values are handled properly early in the method and functions execution</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Error Handling</td>
+<td>Logical conditions are checked: array indexes within bounds, correct conditional guards, loops always terminate, division by zero, etc.</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Performance</td>
+<td>No large synchronous tasks that affect users are done if they can be performed asynchronously</td>
+<td></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Performance</td>
+<td>SQL should efficient: as few statements are executed as possible</td>
+<td></td>
+</tr>
+<tr>
+<td>17</td>
+<td>Performance</td>
+<td>Statics are served minified and uglified in production environments</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <p>Always keep in mind:</p>
 <ul>
+<li>
+<p>Code reviews are a learning activity for all parties
+  involved. Remember the guiding principles in this process, and try
+  to learn as much as possible when giving and receiving reviews.</p>
+</li>
 <li>
 <p>It's easier (and faster) to request a code review on small changes
   (less than 100 lines) than on a huge feature (over 1000
   lines). <strong>Push early, and push often</strong>. If you anticipate a big
   feature which you want to have code reviewed, start requesting code
-  reviews as soon as possible and work on them incrementally.</p>
+  reviews as soon as possible and work on them incrementally. This
+  same advice applies to feature branches.</p>
 </li>
 <li>
 <p><strong>Pre-review your code.</strong> Everybody's time is valuable. Don't
@@ -420,6 +575,11 @@ can proceed to merge your code with <code>master</code>.</p>
   rewrite of that chunk, or better comment structure). <strong>Don't reject
   code because you would have done it differently</strong>. The main purpose
   of code reviews is to have <strong>maintainable code</strong>.</p>
+</li>
+<li>
+<p>As a reviewer, remember to check back on concerns when they are
+  fixed. As a reviewee, remember that concerns should be triaged and
+  handled on a timely fashion.</p>
 </li>
 <li>
 <p>If a reviewer and a reviewee can't agree over a point, bring a third
