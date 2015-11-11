@@ -19,7 +19,8 @@ Always keep in mind:
 - Follow
   [Git Flow](http://nvie.com/posts/a-successful-git-branching-model). However,
   we keep master as develop, and production as master. Use feature and
-  hotfix branches.
+  hotfix branches. There are also a set of Git extensions made by nvie that
+  can be used to work with this pattern easily, get it [here][https://github.com/nvie/gitflow].
 
 - Write good commit messages. Use a good headline and, if needed,
   follow it by further details about the commit.
