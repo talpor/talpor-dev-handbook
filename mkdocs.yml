@@ -16,6 +16,7 @@ pages:
     - 'Retrospective': 'development/methodology/retrospective.md'
     - 'Post-Mortem': 'development/methodology/post-mortem.md'
   - 'Tech Standards': 'development/tech/index.md'
+  - 'Things to notify the DevOps team': 'devops/thingstonotify.md'
 - Deployment:
   - 'The Deployment Phase': 'deployment/index.md'
   - 'Continuous Integration': 'deployment/continuous-integration.md'
