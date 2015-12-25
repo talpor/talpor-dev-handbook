@@ -1,8 +1,8 @@
 ## The Deployment Phase
 
 A deploy is when you push your local changes to either the
-staging/development server or the production server. It doesn't just
-happen just the once when everything is done, but it's an event that
+staging/development server or the production server. It does not just
+happen just once when everything is done, but it is an event that
 happens regularly, specially when you are pushing changes from local
 to staging. When you push to production you should take extra care
 because you might be dealing with real data from your client.
@@ -13,7 +13,7 @@ possibly need.
 
 ### The Checklist
 
-This checklist is a list of stuff to make sure you are doing (or not
+This checklist is a list of things to make sure you are doing (or not
 and why) when setting up or deploying to a server.
 
 - Make sure you disable password logins through SSH. **Enable public
@@ -31,7 +31,7 @@ and why) when setting up or deploying to a server.
 - Production should always use a trusted HTTPS certificate. Make sure
   to get it and set it up.
 
-- Redis is a sweet piece of software. It's so good and versatile that
+- Redis is a sweet piece of software. It is so good and versatile that
   you can use it from a cache backend to a job queue backend. Figure
   out if you need it in your stack and set it up.
 
@@ -50,12 +50,12 @@ and why) when setting up or deploying to a server.
 
 ### Provisioning
 
-We have a set of Salt states to help with provisioning servers with
-secure defaults. Don't be afraid to ask for them. There's an ongoing
+We have a set of Salt states to help provisioning servers with
+secure defaults. Do not be afraid to ask for them. There is an ongoing
 internal effort to move application servers into isolated containers
-(e.g. using Docker). If that sounds interesting, don't be afraid to
+(e.g. using Docker). If that sounds interesting, do not be afraid to
 ask about that either. Many of our tools, for example our CI pipeline,
-is built around the assumption that you are using Docker, so it might
+are built around the assumption that you are using Docker, so it might
 be a good idea to use Docker from the get go.
 
 ### Errors and Logging
